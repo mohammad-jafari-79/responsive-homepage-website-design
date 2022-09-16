@@ -1,0 +1,25 @@
+
+@mixin border($border) {
+  -webkit-border : $border;
+  -moz-border : $border;
+  -ms-border : $border;
+  border: $border;
+}
+
+@mixin background-image($url , $repeat : repeat, $position : auto auto) {
+  background-image: url($url);
+  background-repeat: $repeat ;
+  background-position: $position;
+}
+
+@mixin MediaQuery($canvas) {
+  @if $canvas == L {
+      @media screen and (min-width: $L) { @content }
+  }
+  @else if $canvas == M {
+      @media screen and (min-width: $M) { @content }
+  }
+  @else if $canvas == S {
+    @media screen and (min-width : $S) { @content }
+  }
+}

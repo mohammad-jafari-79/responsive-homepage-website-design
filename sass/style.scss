@@ -1,0 +1,6788 @@
+@import "varibles";
+@import "mixins";
+@import "functions";
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/**                                                 mobile style           
+  */
+.top_header {
+  background-color: #1d2f45;
+  .header_top {
+    display: grid;
+    .navigation-bar {
+      margin-top: 1rem;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      grid-template: 1fr / repeat(12, auto);
+      font-size: 2rem;
+      .logo {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        width: 1.5em;
+        height: 1.5em;
+        background-color: #ecf0f1;
+        border-radius: 15px;
+        i {
+          color: #1d2f45;
+        }
+      }
+      button {
+        font-size: 2.3rem;
+        display: grid;
+        grid-column: 12 / 13;
+        border: none;
+        background-color: inherit;
+        i {
+          color: #ca5d63;
+        }
+      }
+      .sign_up {
+        display: none;
+      }
+      .nav_option {
+        display: none;
+      }
+    }
+  }
+  .header_buttom {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    padding: 4.5rem 2.5rem 0;
+    color: #ffffff;
+    gap: 1.8rem;
+    line-height: 1.3;
+    .first_header {
+      display: grid;
+      grid-row: 1 / 2;
+      align-items: center;
+      p {
+        text-align: center;
+        font-size: 1.1rem;
+        span {
+          display: block;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+    .site_header_info {
+      display: grid;
+      grid-row: 2 / 3;
+      align-items: center;
+      h5 {
+        font-weight: 100;
+        text-align: center;
+        font-size: 0.7rem;
+        span {
+          color: #ca5d63;
+        }
+      }
+    }
+    .start_button {
+      display: grid;
+      grid-row: 3 / 4;
+      align-items: center;
+      justify-items: center;
+      button {
+        background-color: inherit;
+        color: white;
+        font-size: 0.7rem;
+        font-weight: 100;
+        border-color: white;
+        padding: 0.4rem;
+        border-radius: 5px 19px 19px 19px;
+        outline: none;
+      }
+    }
+  }
+}
+.start_menu_for_beginers {
+  padding: 2rem 1rem;
+  .container {
+    display: grid;
+    .header_section {
+      font-size: 0.8rem;
+      display: grid;
+      justify-content: center;
+      header {
+        position: relative;
+        width: 9.6875rem;
+        padding: 0 0 1em 0;
+        span {
+          display: block;
+        }
+        .rectangel {
+          position: absolute;
+          bottom: 0;
+          right: 1em;
+          background: #d66b6b;
+          opacity: 36%;
+          width: 4rem;
+          height: 1.2rem;
+          z-index: -1;
+        }
+      }
+    }
+    .menu_for_start {
+      display: grid;
+      grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+      font-size: 0.6rem;
+      color: white;
+      row-gap: 1rem;
+      margin-top: 2rem;
+      text-align: center;
+      justify-items: center;
+      .circle {
+        &_grey {
+          grid-row: 1 / 2;
+          grid-column: 1 / 2;
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 50%;
+          background: #252525;
+          opacity: 41%;
+          align-self: flex-start;
+          justify-self: flex-start;
+        }
+        &_red {
+          grid-row: 1 / 2;
+          grid-column: 3 / 4;
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 50%;
+          background: #ca5d63;
+          opacity: 41%;
+          align-self: flex-end;
+          justify-self: flex-end;
+        }
+        &_blue {
+          grid-row: 3 / 4;
+          grid-column: 1 / 2;
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 50%;
+          background: #4777b5;
+          opacity: 41%;
+          align-self: center;
+          justify-self: center;
+        }
+      }
+      .box_one {
+        display: grid;
+        align-items: center;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        width: 5.5rem;
+        height: 4rem;
+        .container1 {
+          display: grid;
+          align-items: center;
+          width: 5.5rem;
+          height: 4rem;
+          .box_of_dots {
+            display: none;
+          }
+          .lesson_first_box {
+            width: 5.5rem;
+            height: 4rem;
+            background-color: #1d2f45;
+            border-radius: 20px 75px 75px 75px;
+            display: grid;
+            align-items: center;
+            position: relative;
+            .circle-blue-first {
+              position: absolute;
+              top: 0.2rem;
+              left: 1rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 50%;
+              background: #4777b5;
+            }
+            .circle-red {
+              position: absolute;
+              top: 0.7rem;
+              left: 0.6rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 3px 9px 10px 10px;
+              background: #ca5d63;
+            }
+            .circle-blue-second {
+              position: absolute;
+              top: 1.2rem;
+              left: 0.2rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 50%;
+              background: #4777b5;
+            }
+          }
+        }
+      }
+      .box_two {
+        display: grid;
+        align-items: center;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        width: 5.5rem;
+        height: 4rem;
+        .container2 {
+          display: grid;
+          align-items: center;
+          width: 5.5rem;
+          height: 4rem;
+          .box_of_dots {
+            display: none;
+          }
+          .lesson_second_box {
+            width: 5.5rem;
+            height: 4rem;
+            background-color: #1d2f45;
+            border-radius: 20px 75px 75px 75px;
+            display: grid;
+            align-items: center;
+            position: relative;
+            .circle-blue-first {
+              position: absolute;
+              top: 0.2rem;
+              left: 1rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 50%;
+              background: #4777b5;
+            }
+            .circle-red {
+              position: absolute;
+              top: 0.7rem;
+              left: 0.6rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 3px 9px 10px 10px;
+              background: #ca5d63;
+            }
+            .circle-blue-second {
+              position: absolute;
+              top: 1.2rem;
+              left: 0.2rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 50%;
+              background: #4777b5;
+            }
+          }
+        }
+      }
+      .box_three {
+        display: grid;
+        align-items: center;
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+        width: 5.5rem;
+        height: 4rem;
+        .container3 {
+          display: grid;
+          align-items: center;
+          width: 5.5rem;
+          height: 4rem;
+          .box_of_dots {
+            display: none;
+          }
+          .lesson_third_box {
+            width: 5.5rem;
+            height: 4rem;
+            background-color: #1d2f45;
+            border-radius: 20px 75px 75px 75px;
+            display: grid;
+            align-items: center;
+            position: relative;
+            .circle-blue-first {
+              position: absolute;
+              top: 0.2rem;
+              left: 1rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 50%;
+              background: #4777b5;
+            }
+            .circle-red {
+              position: absolute;
+              top: 0.7rem;
+              left: 0.6rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 3px 9px 10px 10px;
+              background: #ca5d63;
+            }
+            .circle-blue-second {
+              position: absolute;
+              top: 1.2rem;
+              left: 0.2rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 50%;
+              background: #4777b5;
+            }
+          }
+        }
+      }
+      .box_four {
+        display: grid;
+        align-items: center;
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+        width: 5.5rem;
+        height: 4rem;
+        .container4 {
+          display: grid;
+          align-items: center;
+          width: 5.5rem;
+          height: 4rem;
+          .box_of_dots {
+            display: none;
+          }
+          .lesson_fourth_box {
+            width: 5.5rem;
+            height: 4rem;
+            background-color: #1d2f45;
+            border-radius: 20px 75px 75px 75px;
+            display: grid;
+            align-items: center;
+            position: relative;
+            .circle-blue-first {
+              position: absolute;
+              top: 0.2rem;
+              left: 1rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 50%;
+              background: #4777b5;
+            }
+            .circle-red {
+              position: absolute;
+              top: 0.7rem;
+              left: 0.6rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 3px 9px 10px 10px;
+              background: #ca5d63;
+            }
+            .circle-blue-second {
+              position: absolute;
+              top: 1.2rem;
+              left: 0.2rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 50%;
+              background: #4777b5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.make_site_for_your_self {
+  display: grid;
+  .container {
+    display: grid;
+    grid-template: 15rem 1fr / 1fr;
+    color: #ffffff;
+    line-height: 1.3;
+    .head_image {
+      display: grid;
+      max-width: 100%;
+      height: 100%;
+      background-image: url("../img/scott-graham-OQMZwNd3ThU-unsplash.jpg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-row: 1 / 2;
+    }
+    .information {
+      background-color: #1d2f45;
+      padding: 4.5rem 2.5rem 0;
+      display: grid;
+      grid-row: 2 / 3;
+      grid-template: repeat(3, 1fr) / 1fr;
+      color: #ffffff;
+      gap: 1.8rem;
+      line-height: 1.3;
+      .info_header {
+        display: grid;
+        grid-row: 1 / 2;
+        align-items: center;
+        p {
+          text-align: center;
+          font-size: 1.1rem;
+          span {
+            display: block;
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+      .info_notification {
+        display: grid;
+        grid-row: 2 / 3;
+        align-items: center;
+        h5 {
+          font-weight: 100;
+          text-align: center;
+          font-size: 0.7rem;
+        }
+      }
+      .info_button {
+        display: grid;
+        grid-row: 3 / 4;
+        align-items: center;
+        justify-items: center;
+        button {
+          color: #1d2f45;
+          background-color: white;
+          font-size: 0.7rem;
+          font-weight: 600;
+          padding: 0.4rem;
+          border-radius: 5px 19px 19px 19px;
+          outline: none;
+          border: none;
+        }
+      }
+    }
+    .rectangel_one {
+      display: none;
+    }
+  }
+}
+.slider-one {
+  display: grid;
+  .why-our-site {
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.9;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      font-weight: 100;
+    }
+  }
+  .container {
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    grid-template: 1fr / repeat(2, 1fr);
+    height: 18.75rem;
+    margin-top: 2rem;
+    .box_one {
+      display: grid;
+      width: 90%;
+      height: 90%;
+      background-color: #4777b5;
+      border-radius: 20px 75px 75px 75px;
+      grid-column: 1 / 2;
+      color: white;
+      line-height: 1.4;
+      font-size: 0.8rem;
+      grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+      .circles {
+        display: grid;
+        align-self: flex-start;
+        justify-self: flex-end;
+        position: relative;
+        .item1 {
+          position: absolute;
+          left: 1em;
+          top: 0.2em;
+          background-color: #252525;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+        }
+        .item2 {
+          position: absolute;
+          background-color: #1d2f45;
+          left: 1.9em;
+          top: -0.2em;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+        }
+        .item3 {
+          position: absolute;
+          left: 2.2em;
+          top: 0.7em;
+          background-color: #ca5d63;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+        }
+        .item4 {
+          position: absolute;
+          top: 1.18em;
+          left: 1.29em;
+          background-color: #e6eef1;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+        }
+      }
+      .logo {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        grid-row: 2 / 3;
+        font-size: 1.2rem;
+        i {
+          color: $dark_red;
+        }
+      }
+      .header {
+        display: grid;
+        grid-row: 3 / 4;
+        font-size: 0.73rem;
+        p {
+          display: block;
+        }
+      }
+      .details {
+        display: grid;
+        grid-row: 4 / 5;
+        font-size: 0.58rem;
+        padding: 0 0.88em;
+        line-height: 1.8;
+      }
+    }
+    .box_two {
+      display: grid;
+      width: 90%;
+      height: 90%;
+      background-color: #4777b5;
+      grid-column: 2 / 3;
+      border-radius: 20px 75px 75px 75px;
+      color: white;
+      line-height: 1.4;
+      font-size: 0.8rem;
+      grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+      .circles {
+        display: grid;
+        align-self: flex-start;
+        justify-self: flex-end;
+        position: relative;
+        .item1 {
+          position: absolute;
+          left: 1em;
+          top: 0.2em;
+          background-color: #252525;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+        }
+        .item2 {
+          position: absolute;
+          background-color: #1d2f45;
+          left: 1.9em;
+          top: -0.2em;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+        }
+        .item3 {
+          position: absolute;
+          left: 2.2em;
+          top: 0.7em;
+          background-color: #ca5d63;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+        }
+        .item4 {
+          position: absolute;
+          top: 1.18em;
+          left: 1.29em;
+          background-color: #e6eef1;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+        }
+      }
+      .logo {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        grid-row: 2 / 3;
+        font-size: 1.2rem;
+        .fa-chart-line {
+          color: $dark_red;
+        }
+        .fa-window-maximize {
+          display: none;
+        }
+        .fa-code {
+          display: none;
+        }
+      }
+      .header {
+        display: grid;
+        grid-row: 3 / 4;
+        font-size: 0.73rem;
+        p {
+          display: block;
+        }
+      }
+      .details {
+        display: grid;
+        grid-row: 4 / 5;
+        font-size: 0.58rem;
+        padding: 0 0.88em;
+        line-height: 1.8;
+      }
+    }
+    .box_three3 {
+      display: none;
+    }
+  }
+}
+.slider-two {
+  display: grid;
+  margin-top: 2rem;
+  grid-template: 18.75rem 5rem / 1fr;
+  row-gap: 1.5em;
+  .web_design_samples {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-row: 1 / 2;
+    .sample_one {
+      display: grid;
+      width: 11.7448125rem;
+      height: 16.875rem;
+      background-image: url("../../img/theme33.w_370,h_492,r_ct,s_n.jpg");
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 0px 30px 15px 0px #00000026;
+    }
+  }
+  .next_and_perv_buttons {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-row: 2 / 3;
+    opacity: 100%;
+    color: #4777b5;
+    font-size: 2.5rem;
+    column-gap: 1em;
+    .next {
+      justify-self: end;
+    }
+    .perv {
+      justify-self: start;
+    }
+  }
+  .bars {
+    display: none;
+  }
+}
+.bars {
+  display: grid;
+  background-color: #4777b5;
+  .container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    row-gap: 2.2em;
+    line-height: 1.6;
+    header {
+      display: grid;
+      grid-row: 1 / 2;
+      font-size: 1.8rem;
+      margin-top: 1.7rem;
+    }
+    .details {
+      display: grid;
+      grid-row: 2 / 3;
+      font-size: 0.7rem;
+      padding: 0 1rem;
+    }
+    .button {
+      display: grid;
+      align-self: start;
+      grid-row: 3 / 4;
+      font-size: 0.75rem;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      border-radius: 5px 19px 19px 19px;
+      padding: 0.7em 1.5em;
+    }
+  }
+}
+.about_us {
+  display: none;
+}
+footer {
+  display: grid;
+  background-color: #1d2f45;
+  .container {
+    display: grid;
+    grid-template: auto auto auto / 1fr;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    row-gap: 2.2em;
+    line-height: 1.6;
+    .user_logo {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      font-size: 2rem;
+      width: 1.5em;
+      height: 1.5em;
+      background-color: #ecf0f1;
+      border-radius: 15px;
+      grid-row: 1 / 2;
+      margin-top: 1.5rem;
+      i {
+        color: #1d2f45;
+      }
+    }
+    .details {
+      display: grid;
+      color: white;
+      grid-row: 2 / 3;
+      grid-template: 1fr / 1fr;
+      padding: 1.1rem;
+      font-size: 0.7rem;
+      line-height: 1.8;
+      p {
+        display: grid;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+      }
+    }
+    .social_network_logos {
+      display: grid;
+      color: #ecf0f1;
+      grid-row: 3 / 4;
+      font-size: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      align-items: center;
+      column-gap: 0.9em;
+      margin-bottom: 1.5rem;
+      .fa-instagram {
+        grid-column: 1 / 2;
+      }
+      .fa-whatsapp {
+        grid-column: 2 / 3;
+      }
+      .fa-telegram {
+        grid-column: 3 / 4;
+      }
+    }
+  }
+}
+
+/**                                                 tablet style           
+  */
+
+@include MediaQuery("S") {
+  .top_header {
+    background-color: #1d2f45;
+    .header_top {
+      display: grid;
+      .navigation-bar {
+        margin-top: 1rem;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template: 1fr / repeat(12, auto);
+        font-size: 2rem;
+        .logo {
+          display: grid;
+          align-items: center;
+          justify-items: center;
+          width: 1.5em;
+          height: 1.5em;
+          background-color: #ecf0f1;
+          border-radius: 15px;
+          i {
+            color: #1d2f45;
+          }
+        }
+        button {
+          font-size: 2.3rem;
+          display: grid;
+          grid-column: 12 / 13;
+          border: none;
+          background-color: inherit;
+          i {
+            color: #ca5d63;
+          }
+        }
+      }
+    }
+    .header_buttom {
+      display: grid;
+      grid-template: repeat(3, 1fr) / 1fr;
+      padding: 4.5rem 2.5rem 0;
+      color: #ffffff;
+      gap: 1.8rem;
+      line-height: 1.5;
+      .first_header {
+        display: grid;
+        grid-row: 1 / 2;
+        align-items: center;
+        p {
+          text-align: center;
+          font-size: 1.5rem;
+          span {
+            display: block;
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+      .site_header_info {
+        display: grid;
+        grid-row: 2 / 3;
+        align-items: center;
+        h5 {
+          font-weight: 100;
+          text-align: center;
+          font-size: 0.8rem;
+          line-height: 1.8;
+          span {
+            color: #ca5d63;
+          }
+        }
+      }
+      .start_button {
+        display: grid;
+        grid-row: 3 / 4;
+        align-items: center;
+        justify-items: center;
+        button {
+          background-color: inherit;
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 100;
+          border-color: white;
+          padding: 0.4rem;
+          border-radius: 5px 19px 19px 19px;
+          outline: none;
+        }
+      }
+    }
+  }
+  .start_menu_for_beginers {
+    padding: 2rem 1rem;
+
+    .container {
+      display: grid;
+      .header_section {
+        font-size: 1rem;
+        display: grid;
+        text-align: center;
+        grid-template-rows: 1fr;
+        header {
+          display: grid;
+          position: relative;
+          width: 12.6rem;
+          padding: 0 0 1em 0;
+          span {
+            display: block;
+          }
+          .rectangel {
+            position: absolute;
+            bottom: 0;
+            right: 2.5em;
+            background: #d66b6b;
+            opacity: 36%;
+            width: 4rem;
+            height: 1.2rem;
+            z-index: -1;
+          }
+        }
+      }
+      .menu_for_start {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+        font-size: 0.8rem;
+        color: white;
+        row-gap: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+        justify-items: center;
+        .circle {
+          &_grey {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background: #252525;
+            opacity: 41%;
+            align-self: flex-start;
+            justify-self: flex-start;
+          }
+          &_red {
+            grid-row: 1 / 2;
+            grid-column: 3 / 4;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background: #ca5d63;
+            opacity: 41%;
+            align-self: flex-end;
+            justify-self: flex-end;
+          }
+          &_blue {
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background: #4777b5;
+            opacity: 41%;
+            align-self: center;
+            justify-self: center;
+          }
+        }
+        .box_one {
+          display: grid;
+          align-items: center;
+          grid-row: 1 / 2;
+          grid-column: 2 / 3;
+          width: 6.5rem;
+          height: 5rem;
+          .container1 {
+            display: grid;
+            align-items: center;
+            width: 6.5rem;
+            height: 5rem;
+            .box_of_dots {
+              display: none;
+            }
+            .lesson_first_box {
+              width: 6.5rem;
+              height: 5rem;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              position: relative;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.7rem;
+                left: 0.6rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.2rem;
+                left: 0.2rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+          }
+        }
+        .box_two {
+          display: grid;
+          align-items: center;
+          grid-row: 2 / 3;
+          grid-column: 1 / 2;
+          width: 6.5rem;
+          height: 5rem;
+          .container2 {
+            display: grid;
+            align-items: center;
+            width: 6.5rem;
+            height: 5rem;
+            .box_of_dots {
+              display: none;
+            }
+            .lesson_second_box {
+              width: 6.5rem;
+              height: 5rem;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              position: relative;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.7rem;
+                left: 0.6rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.2rem;
+                left: 0.2rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+          }
+        }
+        .box_three {
+          display: grid;
+          align-items: center;
+          grid-row: 2 / 3;
+          grid-column: 3 / 4;
+          width: 6.5rem;
+          height: 5rem;
+          .container3 {
+            display: grid;
+            align-items: center;
+            width: 6.5rem;
+            height: 5rem;
+            .box_of_dots {
+              display: none;
+            }
+            .lesson_third_box {
+              width: 6.5rem;
+              height: 5rem;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              position: relative;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.7rem;
+                left: 0.6rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.2rem;
+                left: 0.2rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+          }
+        }
+        .box_four {
+          display: grid;
+          align-items: center;
+          grid-row: 3 / 4;
+          grid-column: 2 / 3;
+          width: 6.5rem;
+          height: 5rem;
+          .container4 {
+            display: grid;
+            align-items: center;
+            width: 6.5rem;
+            height: 5rem;
+            .box_of_dots {
+              display: none;
+            }
+            .lesson_fourth_box {
+              width: 6.5rem;
+              height: 5rem;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              position: relative;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.7rem;
+                left: 0.6rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.2rem;
+                left: 0.2rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .make_site_for_your_self {
+    display: grid;
+    .container {
+      display: grid;
+      grid-template: 20rem 1fr / 1fr;
+      color: #ffffff;
+
+      line-height: 1.3;
+      .head_image {
+        display: grid;
+        max-width: 100%;
+        height: 100%;
+        background-image: url("../img/scott-graham-OQMZwNd3ThU-unsplash.jpg");
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-row: 1 / 2;
+      }
+      .information {
+        background-color: #1d2f45;
+        padding: 2.7rem 2.5rem 0;
+        display: grid;
+        grid-row: 2 / 3;
+        grid-template: repeat(3, 1fr) / 1fr;
+        color: #ffffff;
+        gap: 1.8rem;
+
+        line-height: 1.5;
+        .info_header {
+          display: grid;
+          grid-row: 1 / 2;
+          align-items: center;
+          p {
+            text-align: center;
+            font-size: 1.4rem;
+            span {
+              display: block;
+              text-align: center;
+              width: 100%;
+            }
+          }
+        }
+        .info_notification {
+          display: grid;
+          grid-row: 2 / 3;
+          align-items: center;
+          h5 {
+            font-weight: 100;
+            text-align: center;
+            font-size: 0.76rem;
+          }
+        }
+        .info_button {
+          display: grid;
+          grid-row: 3 / 4;
+          align-items: center;
+          justify-items: center;
+          button {
+            color: #1d2f45;
+            background-color: white;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.4rem;
+            border-radius: 5px 19px 19px 19px;
+            outline: none;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .slider-one {
+    display: grid;
+    .why-our-site {
+      text-align: center;
+      margin-top: 2rem;
+      line-height: 1.9;
+      h2 {
+        font-size: 1.6rem;
+      }
+      p {
+        margin-top: 1rem;
+        font-size: 0.85rem;
+        font-weight: 300;
+      }
+    }
+    .container {
+      display: grid;
+      justify-content: space-evenly;
+      justify-items: center;
+      align-items: center;
+      grid-template: 1fr / repeat(2, 1fr);
+      height: 18.75rem;
+      margin-top: 2rem;
+      .box_one {
+        display: grid;
+        width: 90%;
+        height: 90%;
+        background-color: #4777b5;
+        border-radius: 20px 75px 75px 75px;
+        grid-column: 1 / 2;
+
+        color: white;
+        line-height: 1.4;
+        font-size: 0.8rem;
+        grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        .circles {
+          display: grid;
+          align-self: flex-start;
+          justify-self: flex-end;
+          position: relative;
+          .item1 {
+            position: absolute;
+            left: 1em;
+            top: 0.2em;
+            background-color: #252525;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item2 {
+            position: absolute;
+            background-color: #1d2f45;
+            left: 1.9em;
+            top: -0.2em;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item3 {
+            position: absolute;
+            left: 2.2em;
+            top: 0.7em;
+            background-color: #ca5d63;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item4 {
+            position: absolute;
+            top: 1.18em;
+            left: 1.29em;
+            background-color: #e6eef1;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+        }
+        .logo {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 50%;
+          width: 3rem;
+          height: 3rem;
+          grid-row: 2 / 3;
+          font-size: 2rem;
+          font-weight: 400;
+          i {
+            color: #ca5d63;
+          }
+        }
+        .header {
+          display: grid;
+          grid-row: 3 / 4;
+          font-size: 0.87rem;
+          p {
+            display: block;
+          }
+        }
+        .details {
+          display: grid;
+          grid-row: 4 / 5;
+          font-size: 0.63rem;
+          padding: 0 0.88em;
+          line-height: 1.8;
+        }
+      }
+      .box_two {
+        display: grid;
+        width: 90%;
+        height: 90%;
+        background-color: #4777b5;
+        grid-column: 2 / 3;
+        border-radius: 20px 75px 75px 75px;
+
+        color: white;
+        line-height: 1.4;
+        font-size: 0.8rem;
+        grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        .circles {
+          display: grid;
+          align-self: flex-start;
+          justify-self: flex-end;
+          position: relative;
+          .item1 {
+            position: absolute;
+            left: 1em;
+            top: 0.2em;
+            background-color: #252525;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item2 {
+            position: absolute;
+            background-color: #1d2f45;
+            left: 1.9em;
+            top: -0.2em;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item3 {
+            position: absolute;
+            left: 2.2em;
+            top: 0.7em;
+            background-color: #ca5d63;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item4 {
+            position: absolute;
+            top: 1.18em;
+            left: 1.29em;
+            background-color: #e6eef1;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+        }
+        .logo {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 50%;
+          width: 3rem;
+          height: 3rem;
+          grid-row: 2 / 3;
+          font-size: 2rem;
+          .fa-chart-line {
+            color: $dark_red;
+          }
+          .fa-window-maximize {
+            display: none;
+          }
+          .fa-code {
+            display: none;
+          }
+        }
+        .header {
+          display: grid;
+          grid-row: 3 / 4;
+          font-size: 0.87rem;
+          p {
+            display: block;
+          }
+        }
+        .details {
+          display: grid;
+          grid-row: 4 / 5;
+          font-size: 0.63rem;
+          padding: 0 0.88em;
+          line-height: 1.8;
+        }
+      }
+      .box_three3 {
+        display: none;
+      }
+    }
+  }
+  .slider-two {
+    display: grid;
+    margin-top: 2rem;
+    grid-template: 22rem 5rem / 1fr;
+    row-gap: 1.5em;
+    .web_design_samples {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-row: 1 / 2;
+      .sample_one {
+        display: grid;
+        width: 16rem;
+        height: 22rem;
+        background-image: url("../img/theme33.w_370,h_492,r_ct,s_n.jpg");
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0px 30px 15px 0px #00000026;
+      }
+    }
+    .next_and_perv_buttons {
+      display: grid;
+      grid-template: 1fr / repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      grid-row: 2 / 3;
+      opacity: 100%;
+      color: #4777b5;
+      font-size: 2.5rem;
+      column-gap: 1em;
+      .next {
+        justify-self: end;
+      }
+      .perv {
+        justify-self: start;
+      }
+    }
+    .bars {
+      display: none;
+    }
+  }
+  .bars {
+    display: grid;
+    background-color: #4777b5;
+    .container {
+      display: grid;
+      grid-template: repeat(3, 1fr) / 1fr;
+      justify-items: center;
+      text-align: center;
+      align-items: center;
+      color: white;
+
+      row-gap: 2.2em;
+      line-height: 1.6;
+      header {
+        display: grid;
+        grid-row: 1 / 2;
+        font-size: 1.8rem;
+        margin-top: 1.7rem;
+      }
+      .details {
+        display: grid;
+        grid-row: 2 / 3;
+        font-size: 0.86rem;
+        padding: 0 1rem;
+      }
+      .button {
+        display: grid;
+        align-self: start;
+        grid-row: 3 / 4;
+        font-size: 0.75rem;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px 19px 19px 19px;
+        padding: 0.7em 1.5em;
+      }
+    }
+  }
+  .about_us {
+    display: none;
+  }
+  footer {
+    display: grid;
+    background-color: #1d2f45;
+    .container {
+      display: grid;
+      grid-template: auto auto auto / 1fr;
+      justify-items: center;
+      text-align: center;
+      align-items: center;
+      row-gap: 2.2em;
+      line-height: 1.6;
+      .user_logo {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        font-size: 2rem;
+        width: 1.5em;
+        height: 1.5em;
+        background-color: #ecf0f1;
+        border-radius: 15px;
+        grid-row: 1 / 2;
+        margin-top: 1.5rem;
+        i {
+          color: #1d2f45;
+        }
+      }
+      .details {
+        display: grid;
+
+        color: white;
+        grid-row: 2 / 3;
+        grid-template: 1fr / 1fr;
+        padding: 1.4rem;
+        font-size: 0.8rem;
+        line-height: 1.9;
+        p {
+          display: grid;
+          grid-row: 1 / 2;
+          grid-column: 1 / 2;
+        }
+      }
+      .social_network_logos {
+        display: grid;
+        color: #ecf0f1;
+        grid-row: 3 / 4;
+        font-size: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        column-gap: 0.9em;
+        margin-bottom: 1.5rem;
+        .fa-instagram {
+          grid-column: 1 / 2;
+        }
+        .fa-whatsapp {
+          grid-column: 2 / 3;
+        }
+        .fa-telegram {
+          grid-column: 3 / 4;
+        }
+      }
+    }
+  }
+}
+
+/**                                                 Surface Pro 3 – 1          
+  */
+
+@include MediaQuery("M") {
+  .top_header {
+    background-color: #1d2f45;
+    display: grid;
+    grid-template: 3.5rem 1fr / repeat(2, 1fr);
+    margin-bottom: 2rem;
+    .header_top {
+      display: grid;
+      grid-row: 1 / 2;
+      grid-column: 1 / 3;
+      .navigation-bar {
+        margin-top: 1rem;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template: 1fr / repeat(12, auto);
+        font-size: 2rem;
+        .logo {
+          display: grid;
+          align-items: center;
+          justify-items: center;
+          width: 1.5em;
+          height: 1.5em;
+          background-color: #ecf0f1;
+          border-radius: 15px;
+          i {
+            color: #1d2f45;
+          }
+        }
+        button {
+          font-size: 2.3rem;
+          display: grid;
+          grid-column: 12 / 13;
+          border: none;
+          background-color: inherit;
+          i {
+            color: #ca5d63;
+          }
+        }
+      }
+    }
+    .hed_image {
+      display: grid;
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      position: relative;
+      justify-items: center;
+      align-items: flex-end;
+      .container {
+        width: 20rem;
+        height: 23rem;
+        position: relative;
+        .image {
+          width: 18rem;
+          height: 21rem;
+          background-image: url("../img/pexels-fauxels-3184287.jpg");
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          box-shadow: 0px 5px 42px -5px rgba(33, 33, 33, 0.77);
+          position: absolute;
+          bottom: -2.1rem;
+          right: 15%;
+          border-radius: 28px 89px 67px 89px;
+          z-index: 1;
+        }
+        .box_of_dots {
+          position: absolute;
+          width: 5.3rem;
+          height: 5.3rem;
+          z-index: 0;
+          right: 2.1rem;
+          top: 3.3rem;
+          .up_dots {
+            position: relative;
+            width: 5.3rem;
+            height: 5.3rem;
+            .dot {
+              background-color: $ligt_blue;
+              border-radius: 50%;
+              width: 0.4rem;
+              height: 0.4rem;
+            }
+            @for $i from 1 through 6 {
+              .item_#{$i} {
+                position: absolute;
+                top: 0;
+                left: $i * 0.8rem;
+              }
+            }
+            @for $i from 7 through 12 {
+              .item_#{$i} {
+                position: absolute;
+                top: 1 * 0.8rem;
+                $a: $i - (1 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 13 through 18 {
+              .item_#{$i} {
+                position: absolute;
+                top: 2 * 0.8rem;
+                $a: $i - (2 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 19 through 24 {
+              .item_#{$i} {
+                position: absolute;
+                top: 3 * 0.8rem;
+                $a: $i - (3 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 25 through 30 {
+              .item_#{$i} {
+                position: absolute;
+                top: 4 * 0.8rem;
+                $a: $i - (4 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 31 through 36 {
+              .item_#{$i} {
+                position: absolute;
+                top: 5 * 0.8rem;
+                $a: $i - (5 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+          }
+        }
+        .box_of_dot {
+          position: absolute;
+          width: 5.3rem;
+          height: 5.3rem;
+          z-index: 0;
+          left: -3.6rem;
+          bottom: 1rem;
+          .down_dots {
+            position: relative;
+            width: 5.3rem;
+            height: 5.3rem;
+            .dot {
+              background-color: $ligt_blue;
+              border-radius: 50%;
+              width: 0.4rem;
+              height: 0.4rem;
+            }
+            @for $i from 1 through 6 {
+              .item_#{$i} {
+                position: absolute;
+                top: 0;
+                left: $i * 0.8rem;
+              }
+            }
+            @for $i from 7 through 12 {
+              .item_#{$i} {
+                position: absolute;
+                top: 1 * 0.8rem;
+                $a: $i - (1 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 13 through 18 {
+              .item_#{$i} {
+                position: absolute;
+                top: 2 * 0.8rem;
+                $a: $i - (2 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 19 through 24 {
+              .item_#{$i} {
+                position: absolute;
+                top: 3 * 0.8rem;
+                $a: $i - (3 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 25 through 30 {
+              .item_#{$i} {
+                position: absolute;
+                top: 4 * 0.8rem;
+                $a: $i - (4 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 31 through 36 {
+              .item_#{$i} {
+                position: absolute;
+                top: 5 * 0.8rem;
+                $a: $i - (5 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .header_buttom {
+      display: grid;
+      grid-template: repeat(3, 1fr) / 1fr;
+      padding: 2.5rem 2.5rem;
+      color: #ffffff;
+      row-gap: 2rem;
+      column-gap: 1em;
+
+      line-height: 1.4;
+      grid-row: 2 / 3;
+      .first_header {
+        display: grid;
+        grid-row: 1 / 2;
+        align-items: center;
+        p {
+          text-align: center;
+          font-size: 1.4rem;
+          span {
+            display: block;
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+      .site_header_info {
+        display: grid;
+        grid-row: 2 / 3;
+        align-items: center;
+        h5 {
+          font-weight: 100;
+          text-align: center;
+          font-size: 0.8rem;
+          line-height: 1.8;
+          span {
+            color: #ca5d63;
+          }
+        }
+      }
+      .start_button {
+        display: grid;
+        grid-row: 3 / 4;
+        align-items: center;
+        justify-items: center;
+        button {
+          background-color: inherit;
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 100;
+          border-color: white;
+          padding: 0.4rem;
+          border-radius: 5px 19px 19px 19px;
+          outline: none;
+        }
+      }
+    }
+  }
+  .start_menu_for_beginers {
+    padding: 2rem 1rem;
+
+    .container {
+      display: grid;
+      .header_section {
+        font-size: 0.8rem;
+        display: grid;
+        justify-content: center;
+        header {
+          position: relative;
+          width: 19rem;
+          padding: 0 0 1em 0;
+          border-left: 1px solid black;
+          border-right: 1px solid black;
+          span {
+            display: block;
+          }
+          .rectangel {
+            position: absolute;
+            bottom: -0.2em;
+            right: 11.4375rem;
+            background: #d66b6b;
+            opacity: 36%;
+            width: 4rem;
+            height: 1.2rem;
+            z-index: -1;
+          }
+        }
+      }
+      .menu_for_start {
+        display: grid;
+        grid-template: 14rem / repeat(4, 1fr);
+
+        font-size: 1rem;
+        color: white;
+        margin-top: 2rem;
+        row-gap: 0;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        column-gap: 0.3em;
+        .circle {
+          &_grey {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background: #252525;
+            opacity: 41%;
+            align-self: flex-start;
+            justify-self: flex-start;
+          }
+          &_red {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background: #ca5d63;
+            opacity: 41%;
+            align-self: flex-end;
+            justify-self: flex-end;
+          }
+          &_blue {
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background: #4777b5;
+            opacity: 41%;
+            align-self: start;
+            justify-self: center;
+            position: absolute;
+            top: -4.5rem;
+          }
+        }
+        .box_one {
+          display: grid;
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+          position: relative;
+          align-items: center;
+          width: 100%;
+          height: 8rem;
+          justify-items: center;
+          .container1 {
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            width: 11rem;
+            height: 8rem;
+            position: relative;
+            .lesson_first_box {
+              width: 10.5rem;
+              height: 6rem;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              z-index: 1;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.7rem;
+                left: 0.6rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.2rem;
+                left: 0.2rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+            .box_of_dots {
+              display: grid;
+              position: absolute;
+              width: 5.3rem;
+              height: 5.3rem;
+              z-index: 0;
+              right: 0;
+              bottom: -1rem;
+              .up_dots {
+                position: relative;
+                width: 5.3rem;
+                height: 5.3rem;
+                .dot {
+                  background-color: $ligt_blue;
+                  border-radius: 50%;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  opacity: 60%;
+                }
+                @for $i from 1 through 6 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 0;
+                    left: $i * 0.8rem;
+                  }
+                }
+                @for $i from 7 through 12 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 1 * 0.8rem;
+                    $a: $i - (1 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 13 through 18 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 2 * 0.8rem;
+                    $a: $i - (2 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 19 through 24 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 3 * 0.8rem;
+                    $a: $i - (3 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 25 through 30 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 4 * 0.8rem;
+                    $a: $i - (4 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 31 through 36 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 5 * 0.8rem;
+                    $a: $i - (5 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .box_two {
+          display: grid;
+          grid-column: 2 / 3;
+          grid-row: 1 / 2;
+          position: relative;
+          align-self: start;
+          align-items: center;
+          width: 100%;
+          height: 8rem;
+          justify-items: center;
+          .container2 {
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            width: 11rem;
+            height: 8rem;
+            position: relative;
+            .lesson_second_box {
+              width: 10.5rem;
+              height: 6rem;
+              justify-self: end;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              z-index: 1;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.7rem;
+                left: 0.6rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.2rem;
+                left: 0.2rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+            .box_of_dots {
+              display: grid;
+              position: absolute;
+              width: 5.3rem;
+              height: 5.3rem;
+              z-index: 0;
+              right: 0;
+              bottom: -1rem;
+              .up_dots {
+                position: relative;
+                width: 5.3rem;
+                height: 5.3rem;
+                .dot {
+                  background-color: $ligt_blue;
+                  border-radius: 50%;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  opacity: 60%;
+                }
+                @for $i from 1 through 6 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 0;
+                    left: $i * 0.8rem;
+                  }
+                }
+                @for $i from 7 through 12 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 1 * 0.8rem;
+                    $a: $i - (1 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 13 through 18 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 2 * 0.8rem;
+                    $a: $i - (2 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 19 through 24 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 3 * 0.8rem;
+                    $a: $i - (3 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 25 through 30 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 4 * 0.8rem;
+                    $a: $i - (4 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 31 through 36 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 5 * 0.8rem;
+                    $a: $i - (5 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .box_three {
+          display: grid;
+          grid-row: 1 / 2;
+          grid-column: 3 / 4;
+          position: relative;
+          align-items: center;
+          width: 100%;
+          height: 8rem;
+          justify-items: center;
+          .container3 {
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            width: 11rem;
+            height: 8rem;
+            position: relative;
+            .lesson_third_box {
+              width: 10.5rem;
+              height: 6rem;
+              justify-self: end;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              z-index: 1;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.7rem;
+                left: 0.6rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.2rem;
+                left: 0.2rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+            .box_of_dots {
+              display: grid;
+              position: absolute;
+              width: 5.3rem;
+              height: 5.3rem;
+              z-index: 0;
+              right: 0;
+              bottom: -1rem;
+              .up_dots {
+                position: relative;
+                width: 5.3rem;
+                height: 5.3rem;
+                .dot {
+                  background-color: $ligt_blue;
+                  border-radius: 50%;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  opacity: 60%;
+                }
+                @for $i from 1 through 6 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 0;
+                    left: $i * 0.8rem;
+                  }
+                }
+                @for $i from 7 through 12 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 1 * 0.8rem;
+                    $a: $i - (1 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 13 through 18 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 2 * 0.8rem;
+                    $a: $i - (2 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 19 through 24 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 3 * 0.8rem;
+                    $a: $i - (3 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 25 through 30 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 4 * 0.8rem;
+                    $a: $i - (4 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 31 through 36 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 5 * 0.8rem;
+                    $a: $i - (5 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .box_four {
+          display: grid;
+          grid-row: 1 / 2;
+          grid-column: 4 / 5;
+          position: relative;
+          align-self: start;
+          align-items: center;
+          justify-items: center;
+          width: 100%;
+          height: 8rem;
+          .container4 {
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            width: 11rem;
+            height: 8rem;
+            position: relative;
+            .lesson_fourth_box {
+              width: 10.5rem;
+              height: 6rem;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              z-index: 1;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.7rem;
+                left: 0.6rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.2rem;
+                left: 0.2rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+            .box_of_dots {
+              display: grid;
+              position: absolute;
+              width: 5.3rem;
+              height: 5.3rem;
+              z-index: 0;
+              right: 0rem;
+              bottom: -1rem;
+              .up_dots {
+                position: relative;
+                width: 5.3rem;
+                height: 5.3rem;
+                .dot {
+                  background-color: $ligt_blue;
+                  border-radius: 50%;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  opacity: 60%;
+                }
+                @for $i from 1 through 6 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 0;
+                    left: $i * 0.8rem;
+                  }
+                }
+                @for $i from 7 through 12 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 1 * 0.8rem;
+                    $a: $i - (1 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 13 through 18 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 2 * 0.8rem;
+                    $a: $i - (2 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 19 through 24 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 3 * 0.8rem;
+                    $a: $i - (3 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 25 through 30 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 4 * 0.8rem;
+                    $a: $i - (4 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 31 through 36 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 5 * 0.8rem;
+                    $a: $i - (5 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .make_site_for_your_self {
+    display: grid;
+    width: 100%;
+    height: 33rem;
+    .container {
+      display: grid;
+      grid-template: 1fr / 1fr;
+      color: #ffffff;
+      background-color: #e6eef1;
+
+      line-height: 1.3;
+      justify-items: center;
+      align-items: center;
+      .rectangel_one {
+        display: grid;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        width: 80%;
+        height: 80%;
+        position: relative;
+        background-color: #cbd5db;
+        border-radius: 29px;
+        z-index: 1;
+        margin: 3.7rem 0 0 1.5rem;
+        .rectangel_two {
+          width: 100%;
+          height: 100%;
+          background-color: #96a3af;
+          z-index: 2;
+          border-radius: 29px;
+          position: absolute;
+          bottom: 0.7em;
+          right: 0.7em;
+          .rectangel_three {
+            width: 100%;
+            height: 100%;
+            background-color: #1d2f45;
+            z-index: 3;
+            border-radius: 29px;
+            position: absolute;
+            bottom: 1em;
+            right: 1em;
+            display: grid;
+            grid-template: 26.399rem / repeat(3, 1fr);
+            justify-items: center;
+            .head_image {
+              display: grid;
+              max-width: 100%;
+              height: 90%;
+              width: 16rem;
+              grid-row: 1 / 2;
+              grid-column: 3 / 4;
+              background-image: none;
+              .container_image {
+                position: relative;
+                width: 15rem;
+                height: 19.438rem;
+                display: grid;
+                justify-items: center;
+                .image {
+                  width: 12.3rem;
+                  height: 19.438rem;
+                  display: grid;
+                  position: absolute;
+                  z-index: 5;
+                  top: -2rem;
+                  background-image: url("../img/scott-graham-OQMZwNd3ThU-unsplash.jpg");
+                  background-position: 50% 50%;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  border-radius: 28px 89px 67px 89px;
+                }
+                .box_of_dots {
+                  position: absolute;
+                  width: 5.3rem;
+                  height: 5.3rem;
+                  z-index: 0;
+                  right: 0.5rem;
+                  bottom: 0.8rem;
+                  .up_dots {
+                    position: relative;
+                    width: 5.3rem;
+                    height: 5.3rem;
+                    .dot {
+                      background-color: $ligt_blue;
+                      border-radius: 50%;
+                      width: 0.4rem;
+                      height: 0.4rem;
+                    }
+                    @for $i from 1 through 6 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 0;
+                        left: $i * 0.8rem;
+                      }
+                    }
+                    @for $i from 7 through 12 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 1 * 0.8rem;
+                        $a: $i - (1 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 13 through 18 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 2 * 0.8rem;
+                        $a: $i - (2 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 19 through 24 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 3 * 0.8rem;
+                        $a: $i - (3 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 25 through 30 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 4 * 0.8rem;
+                        $a: $i - (4 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 31 through 36 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 5 * 0.8rem;
+                        $a: $i - (5 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                  }
+                }
+                .box_of_dot {
+                  position: absolute;
+                  width: 5.3rem;
+                  height: 5.3rem;
+                  z-index: 0;
+                  left: -0.8rem;
+                  top: 0.5rem;
+                  .down_dots {
+                    position: relative;
+                    width: 5.3rem;
+                    height: 5.3rem;
+                    .dot {
+                      background-color: $ligt_blue;
+                      border-radius: 50%;
+                      width: 0.4rem;
+                      height: 0.4rem;
+                    }
+                    @for $i from 1 through 6 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 0;
+                        left: $i * 0.8rem;
+                      }
+                    }
+                    @for $i from 7 through 12 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 1 * 0.8rem;
+                        $a: $i - (1 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 13 through 18 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 2 * 0.8rem;
+                        $a: $i - (2 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 19 through 24 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 3 * 0.8rem;
+                        $a: $i - (3 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 25 through 30 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 4 * 0.8rem;
+                        $a: $i - (4 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 31 through 36 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 5 * 0.8rem;
+                        $a: $i - (5 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .information {
+              width: 100%;
+              height: 100%;
+              padding: 2.7rem 2.5rem 0;
+              display: grid;
+              grid-row: 1 / 2;
+              grid-column: 1 / 3;
+              grid-template: repeat(3, 1fr) / 1fr;
+              color: #ffffff;
+              gap: 1.8rem;
+
+              line-height: 1.5;
+              border-radius: 0px 29px 29px 0px;
+              .info_header {
+                display: grid;
+                grid-row: 1 / 2;
+                align-items: center;
+                p {
+                  text-align: center;
+                  font-size: 1.4rem;
+                  span {
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                  }
+                }
+              }
+              .info_notification {
+                display: grid;
+                grid-row: 2 / 3;
+                align-items: center;
+                h5 {
+                  font-weight: 100;
+                  text-align: center;
+                  font-size: 0.76rem;
+                }
+              }
+              .info_button {
+                display: grid;
+                grid-row: 3 / 4;
+                align-items: center;
+                justify-items: center;
+                button {
+                  color: #1d2f45;
+                  background-color: white;
+                  font-size: 0.85rem;
+                  font-weight: 600;
+                  padding: 0.4rem;
+                  border-radius: 5px 19px 19px 19px;
+                  outline: none;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .head_image {
+        display: none;
+      }
+      .information {
+        display: none;
+
+        .info_header {
+          display: none;
+        }
+        .info_notification {
+          display: none;
+        }
+        .info_button {
+          display: none;
+        }
+      }
+    }
+  }
+  #sticky_box {
+    display: none;
+    background-color: #4777b5;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    padding: 0 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .slider-one {
+    display: grid;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/scott-graham-5fNmWej4tAA-unsplash.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    .why-our-site {
+      text-align: center;
+      margin-top: 2rem;
+      line-height: 1.9;
+      color: #ffffff;
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        margin-top: 1rem;
+        font-size: 0.85rem;
+        font-weight: 100;
+      }
+    }
+    .container {
+      display: grid;
+      justify-content: space-evenly;
+      justify-items: center;
+      align-items: center;
+      grid-template: 1fr / 0.7fr 14.375rem 0.4fr 14.375rem 0.4fr 14.375rem 0.7fr;
+      height: 18.75rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      .box_one {
+        display: grid;
+        width: 80%;
+        height: 80%;
+        background-color: #4777b5;
+        border-radius: 20px 75px 75px 75px;
+        grid-column: 2 / 3;
+
+        color: white;
+        line-height: 1.4;
+        font-size: 0.8rem;
+        grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        align-self: start;
+        .circles {
+          display: grid;
+          align-self: flex-start;
+          justify-self: flex-end;
+          position: relative;
+          .item1 {
+            position: absolute;
+            left: 1em;
+            top: 0.2em;
+            background-color: #252525;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item2 {
+            position: absolute;
+            background-color: #1d2f45;
+            left: 1.9em;
+            top: -0.2em;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item3 {
+            position: absolute;
+            left: 2.2em;
+            top: 0.7em;
+            background-color: #ca5d63;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item4 {
+            position: absolute;
+            top: 1.18em;
+            left: 1.29em;
+            background-color: #e6eef1;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+        }
+        .logo {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 50%;
+          width: 2.5rem;
+          height: 2.5rem;
+          grid-row: 2 / 3;
+          font-size: 1.3rem;
+          i {
+            color: #ca5d63;
+          }
+        }
+        .header {
+          display: grid;
+          grid-row: 3 / 4;
+          font-size: 0.73rem;
+          p {
+            display: block;
+          }
+        }
+        .details {
+          display: grid;
+          grid-row: 4 / 5;
+          font-size: 0.56rem;
+          padding: 0 1.4em;
+          line-height: 1.8;
+        }
+      }
+      .box_two {
+        display: grid;
+        width: 80%;
+        height: 80%;
+        background-color: #4777b5;
+        grid-column: 4 / 5;
+        border-radius: 20px 75px 75px 75px;
+
+        color: white;
+        line-height: 1.4;
+        font-size: 0.8rem;
+        grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        align-self: end;
+        .circles {
+          display: grid;
+          align-self: flex-start;
+          justify-self: flex-end;
+          position: relative;
+          .item1 {
+            position: absolute;
+            left: 1em;
+            top: 0.2em;
+            background-color: #252525;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item2 {
+            position: absolute;
+            background-color: #1d2f45;
+            top: 1.18em;
+            left: 1.29em;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item3 {
+            position: absolute;
+            left: 2.2em;
+            top: 0.7em;
+            background-color: #ca5d63;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item4 {
+            position: absolute;
+            left: 1.9em;
+            top: -0.2em;
+            background-color: #e6eef1;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+        }
+        .logo {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 50%;
+          width: 2.5rem;
+          height: 2.5rem;
+          grid-row: 2 / 3;
+          font-size: 1.42rem;
+          grid-template: 1fr / 1fr;
+          position: relative;
+          .fa-chart-line {
+            display: none;
+          }
+          .fa-window-maximize {
+            display: grid;
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            color: $dark_red;
+            z-index: 0;
+          }
+          .fa-code {
+            display: grid;
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            color: $dark_red;
+            z-index: 1;
+            font-size: 0.64rem;
+            position: absolute;
+            bottom: 0.7rem;
+          }
+        }
+        .header {
+          display: grid;
+          grid-row: 3 / 4;
+          font-size: 0.73rem;
+          p {
+            display: block;
+          }
+        }
+        .details {
+          display: grid;
+          grid-row: 4 / 5;
+          font-size: 0.56rem;
+          padding: 0 1.4em;
+          line-height: 1.8;
+        }
+      }
+      .box_three3 {
+        display: grid;
+        width: 80%;
+        height: 80%;
+        background-color: #4777b5;
+        grid-column: 6 / 7;
+        border-radius: 20px 75px 75px 75px;
+
+        color: white;
+        line-height: 1.4;
+        font-size: 0.8rem;
+        grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+        align-self: start;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        .circles {
+          display: grid;
+          align-self: flex-start;
+          justify-self: flex-end;
+          position: relative;
+          .item1 {
+            position: absolute;
+            left: 1.9em;
+            top: -0.2em;
+            background-color: #252525;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item2 {
+            position: absolute;
+            background-color: #1d2f45;
+            left: 2.2em;
+            top: 0.7em;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item3 {
+            position: absolute;
+            left: 1em;
+            top: 0.2em;
+            background-color: #ca5d63;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item4 {
+            position: absolute;
+            top: 1.18em;
+            left: 1.29em;
+            background-color: #e6eef1;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+        }
+        .logo {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 50%;
+          width: 2.5rem;
+          height: 2.5rem;
+          grid-row: 2 / 3;
+          font-size: 1.3rem;
+          i {
+            color: #ca5d63;
+          }
+        }
+        .header {
+          display: grid;
+          grid-row: 3 / 4;
+          font-size: 0.73rem;
+          p {
+            display: block;
+          }
+        }
+        .details {
+          display: grid;
+          grid-row: 4 / 5;
+          font-size: 0.56rem;
+          padding: 0 1.4em;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+  .slider-two {
+    display: grid;
+    grid-template: 23rem 5rem / 1fr 1fr;
+    row-gap: 1.5em;
+    margin-top: 0rem;
+    .web_design_samples {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      padding: 2rem 0rem 0rem 0rem;
+      .sample_one {
+        display: grid;
+        width: 16rem;
+        height: 22rem;
+        background-image: url("../img/theme33.w_370,h_492,r_ct,s_n.jpg");
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0px 30px 15px 0px #00000026;
+      }
+    }
+    .next_and_perv_buttons {
+      display: grid;
+      grid-template: 1fr / repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      opacity: 100%;
+      color: #4777b5;
+      font-size: 2.5rem;
+      column-gap: 1em;
+      .next {
+        justify-self: end;
+      }
+      .perv {
+        justify-self: start;
+      }
+    }
+    .bars {
+      display: grid;
+      background-color: #4777b5;
+      grid-row: 1 / 3;
+      grid-column: 2 / 3;
+      .container {
+        display: grid;
+        grid-template: 1fr 7rem 1fr / 1fr;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+        color: white;
+
+        row-gap: 1em;
+        line-height: 1.6;
+        header {
+          display: grid;
+          grid-row: 1 / 2;
+          font-size: 1.8rem;
+          margin: 1.7rem 2rem 0rem 0rem;
+          justify-self: start;
+          align-self: end;
+        }
+        .details {
+          display: grid;
+          grid-row: 2 / 3;
+          font-size: 0.8rem;
+          padding: 0rem 1rem 0rem 1rem;
+          justify-self: start;
+          text-align: start;
+        }
+        .button {
+          display: grid;
+          align-self: start;
+          justify-self: start;
+          grid-row: 3 / 4;
+          font-size: 0.75rem;
+          text-decoration: none;
+          color: white;
+          border: 1px solid white;
+          border-radius: 5px 19px 19px 19px;
+          padding: 0.7em 1.5em;
+          margin: 0rem 2rem 0rem 0rem;
+        }
+      }
+    }
+  }
+  .bars {
+    display: none;
+  }
+  .about_us {
+    background: linear-gradient(rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.5)),
+      url("../img/headway-5QgIuuBxKwM-unsplash.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template: 18.5rem / repeat(2, 1fr);
+
+    color: white;
+    .detail {
+      display: grid;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      grid-template: repeat(2, 1fr) / 1fr;
+      justify-items: center;
+      text-align: center;
+      line-height: 1.8;
+      align-items: center;
+      .head {
+        font-size: 0.8rem;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        padding: 1.7em 2em 0;
+      }
+      .button {
+        font-size: 0.9rem;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        border: 1px solid white;
+        padding: 1em 1.4em;
+        border-radius: 5px 19px 19px 19px;
+      }
+    }
+  }
+  footer {
+    display: grid;
+    background-color: #1d2f45;
+    .container {
+      display: grid;
+      grid-template: auto auto auto / 1fr;
+      justify-items: center;
+      text-align: center;
+      align-items: center;
+      row-gap: 2.2em;
+      line-height: 1.6;
+      .user_logo {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        font-size: 2rem;
+        width: 1.5em;
+        height: 1.5em;
+        background-color: #ecf0f1;
+        border-radius: 15px;
+        grid-row: 1 / 2;
+        margin-top: 1.5rem;
+        i {
+          color: #1d2f45;
+        }
+      }
+      .details {
+        display: grid;
+
+        color: white;
+        grid-row: 2 / 3;
+        grid-template: 1fr / repeat(4, 1fr);
+        padding: 0rem;
+        p {
+          display: grid;
+          grid-row: 1 / 2;
+          grid-column: 2 / 4;
+        }
+      }
+      .social_network_logos {
+        display: grid;
+        color: #ecf0f1;
+        grid-row: 3 / 4;
+        font-size: 2.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        column-gap: 0.9em;
+        margin-bottom: 1.5rem;
+        .fa-instagram {
+          grid-column: 1 / 2;
+        }
+        .fa-whatsapp {
+          grid-column: 2 / 3;
+        }
+        .fa-telegram {
+          grid-column: 3 / 4;
+        }
+      }
+    }
+  }
+}
+
+/**                                                 1024px to 1440px          
+  */
+
+@media screen and (min-width: 1024px) {
+  .top_header {
+    background-color: #1d2f45;
+    display: grid;
+    grid-template: 3.5rem 1fr / repeat(2, 1fr);
+    margin-bottom: 2rem;
+    .header_top {
+      display: grid;
+      grid-row: 1 / 2;
+      grid-column: 1 / 3;
+      .navigation-bar {
+        margin-top: 1rem;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template: 1fr / repeat(12, auto);
+        font-size: 2.8rem;
+        .logo {
+          display: grid;
+          align-items: center;
+          justify-items: center;
+          width: 1.5em;
+          height: 1.5em;
+          background-color: #ecf0f1;
+          border-radius: 15px;
+          i {
+            color: #1d2f45;
+          }
+        }
+        .nav_option {
+          display: none;
+        }
+        .sign_up {
+          display: none;
+        }
+        button {
+          font-size: 3.6rem;
+          display: grid;
+          grid-column: 12 / 13;
+          border: none;
+          background-color: inherit;
+          i {
+            color: #ca5d63;
+          }
+        }
+      }
+    }
+    .hed_image {
+      display: grid;
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      position: relative;
+      justify-items: center;
+      align-items: flex-end;
+      .container {
+        width: 20rem;
+        height: 23rem;
+        position: relative;
+        .image {
+          width: 18rem;
+          height: 21rem;
+          background-image: url("../img/pexels-fauxels-3184287.jpg");
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          box-shadow: 0px 5px 42px -5px rgba(33, 33, 33, 0.77);
+          position: absolute;
+          bottom: -2.1rem;
+          right: 15%;
+          border-radius: 28px 89px 67px 89px;
+          z-index: 1;
+        }
+        .box_of_dots {
+          position: absolute;
+          width: 5.3rem;
+          height: 5.3rem;
+          z-index: 0;
+          right: 2.1rem;
+          top: 3.3rem;
+          .up_dots {
+            position: relative;
+            width: 5.3rem;
+            height: 5.3rem;
+            .dot {
+              background-color: $ligt_blue;
+              border-radius: 50%;
+              width: 0.4rem;
+              height: 0.4rem;
+            }
+            @for $i from 1 through 6 {
+              .item_#{$i} {
+                position: absolute;
+                top: 0;
+                left: $i * 0.8rem;
+              }
+            }
+            @for $i from 7 through 12 {
+              .item_#{$i} {
+                position: absolute;
+                top: 1 * 0.8rem;
+                $a: $i - (1 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 13 through 18 {
+              .item_#{$i} {
+                position: absolute;
+                top: 2 * 0.8rem;
+                $a: $i - (2 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 19 through 24 {
+              .item_#{$i} {
+                position: absolute;
+                top: 3 * 0.8rem;
+                $a: $i - (3 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 25 through 30 {
+              .item_#{$i} {
+                position: absolute;
+                top: 4 * 0.8rem;
+                $a: $i - (4 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 31 through 36 {
+              .item_#{$i} {
+                position: absolute;
+                top: 5 * 0.8rem;
+                $a: $i - (5 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+          }
+        }
+        .box_of_dot {
+          position: absolute;
+          width: 5.3rem;
+          height: 5.3rem;
+          z-index: 0;
+          left: -3.6rem;
+          bottom: 1rem;
+          .down_dots {
+            position: relative;
+            width: 5.3rem;
+            height: 5.3rem;
+            .dot {
+              background-color: $ligt_blue;
+              border-radius: 50%;
+              width: 0.4rem;
+              height: 0.4rem;
+            }
+            @for $i from 1 through 6 {
+              .item_#{$i} {
+                position: absolute;
+                top: 0;
+                left: $i * 0.8rem;
+              }
+            }
+            @for $i from 7 through 12 {
+              .item_#{$i} {
+                position: absolute;
+                top: 1 * 0.8rem;
+                $a: $i - (1 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 13 through 18 {
+              .item_#{$i} {
+                position: absolute;
+                top: 2 * 0.8rem;
+                $a: $i - (2 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 19 through 24 {
+              .item_#{$i} {
+                position: absolute;
+                top: 3 * 0.8rem;
+                $a: $i - (3 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 25 through 30 {
+              .item_#{$i} {
+                position: absolute;
+                top: 4 * 0.8rem;
+                $a: $i - (4 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 31 through 36 {
+              .item_#{$i} {
+                position: absolute;
+                top: 5 * 0.8rem;
+                $a: $i - (5 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .header_buttom {
+      display: grid;
+      grid-template: repeat(2, 1fr) 4rem / 1fr;
+      padding: 2.5rem 2.5rem;
+      color: #ffffff;
+      row-gap: 2rem;
+      column-gap: 1em;
+
+      line-height: 1.4;
+      grid-row: 2 / 3;
+      .first_header {
+        display: grid;
+        grid-row: 1 / 2;
+        align-items: center;
+        p {
+          text-align: center;
+          font-size: 1.6rem;
+          span {
+            display: block;
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+      .site_header_info {
+        display: grid;
+        grid-row: 2 / 3;
+        align-items: center;
+        h5 {
+          font-weight: 100;
+          text-align: center;
+          font-size: 0.9rem;
+          line-height: 1.9;
+          span {
+            color: #ca5d63;
+          }
+        }
+      }
+      .start_button {
+        display: grid;
+        grid-row: 3 / 4;
+        align-items: center;
+        justify-items: center;
+        button {
+          background-color: inherit;
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 100;
+          border-color: white;
+          padding: 0.4rem;
+          border-radius: 5px 19px 19px 19px;
+          outline: none;
+        }
+      }
+    }
+  }
+  .start_menu_for_beginers {
+    padding: 2rem 1rem;
+
+    .container {
+      display: grid;
+      .header_section {
+        font-size: 1rem;
+        display: grid;
+        justify-content: center;
+        header {
+          position: relative;
+          width: 23rem;
+          padding: 0 0 1em 0;
+          border-left: 1px solid black;
+          border-right: 1px solid black;
+          span {
+            display: block;
+          }
+          .rectangel {
+            position: absolute;
+            bottom: -0.1em;
+            right: 15rem;
+            background: #d66b6b;
+            opacity: 36%;
+            width: 4rem;
+            height: 1.2rem;
+            z-index: -1;
+          }
+        }
+      }
+      .menu_for_start {
+        display: grid;
+        grid-template: 14rem / repeat(4, 1fr);
+
+        font-size: 1.3rem;
+        color: white;
+        margin-top: 2rem;
+        row-gap: 0;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        column-gap: 0.3em;
+        .circle {
+          &_grey {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            background: #252525;
+            opacity: 41%;
+            align-self: flex-start;
+            justify-self: flex-start;
+          }
+          &_red {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            background: #ca5d63;
+            opacity: 41%;
+            align-self: flex-end;
+            justify-self: flex-end;
+          }
+          &_blue {
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            background: #4777b5;
+            opacity: 41%;
+            align-self: start;
+            justify-self: center;
+            position: absolute;
+            top: -4.5rem;
+          }
+        }
+        .box_one {
+          display: grid;
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+          position: relative;
+          align-items: center;
+          width: 100%;
+          height: 8rem;
+          justify-items: center;
+          .container1 {
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            width: 12rem;
+            height: 8rem;
+            position: relative;
+            .lesson_first_box {
+              width: 11.1rem;
+              height: 6.5rem;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              z-index: 1;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.87rem;
+                left: 0.7rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.6rem;
+                left: 0.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+            .box_of_dots {
+              display: grid;
+              position: absolute;
+              width: 5.3rem;
+              height: 5.3rem;
+              z-index: 0;
+              right: 0;
+              bottom: -1rem;
+              .up_dots {
+                position: relative;
+                width: 5.3rem;
+                height: 5.3rem;
+                .dot {
+                  background-color: $ligt_blue;
+                  border-radius: 50%;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  opacity: 60%;
+                }
+                @for $i from 1 through 6 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 0;
+                    left: $i * 0.8rem;
+                  }
+                }
+                @for $i from 7 through 12 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 1 * 0.8rem;
+                    $a: $i - (1 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 13 through 18 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 2 * 0.8rem;
+                    $a: $i - (2 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 19 through 24 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 3 * 0.8rem;
+                    $a: $i - (3 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 25 through 30 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 4 * 0.8rem;
+                    $a: $i - (4 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 31 through 36 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 5 * 0.8rem;
+                    $a: $i - (5 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .box_two {
+          display: grid;
+          grid-column: 2 / 3;
+          grid-row: 1 / 2;
+          position: relative;
+          align-self: start;
+          align-items: center;
+          width: 100%;
+          height: 8rem;
+          justify-items: center;
+          .container2 {
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            width: 12rem;
+            height: 8rem;
+            position: relative;
+            .lesson_second_box {
+              width: 11.1rem;
+              height: 6.5rem;
+              justify-self: end;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              z-index: 1;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.87rem;
+                left: 0.7rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.6rem;
+                left: 0.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+            .box_of_dots {
+              display: grid;
+              position: absolute;
+              width: 5.3rem;
+              height: 5.3rem;
+              z-index: 0;
+              right: 0;
+              bottom: -1rem;
+              .up_dots {
+                position: relative;
+                width: 5.3rem;
+                height: 5.3rem;
+                .dot {
+                  background-color: $ligt_blue;
+                  border-radius: 50%;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  opacity: 60%;
+                }
+                @for $i from 1 through 6 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 0;
+                    left: $i * 0.8rem;
+                  }
+                }
+                @for $i from 7 through 12 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 1 * 0.8rem;
+                    $a: $i - (1 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 13 through 18 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 2 * 0.8rem;
+                    $a: $i - (2 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 19 through 24 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 3 * 0.8rem;
+                    $a: $i - (3 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 25 through 30 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 4 * 0.8rem;
+                    $a: $i - (4 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 31 through 36 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 5 * 0.8rem;
+                    $a: $i - (5 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .box_three {
+          display: grid;
+          grid-row: 1 / 2;
+          grid-column: 3 / 4;
+          position: relative;
+          align-items: center;
+          width: 100%;
+          height: 8rem;
+          justify-items: center;
+          .container3 {
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            width: 12rem;
+            height: 8rem;
+            position: relative;
+            .lesson_third_box {
+              width: 11.1rem;
+              height: 6.5rem;
+              justify-self: end;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              z-index: 1;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.87rem;
+                left: 0.7rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.6rem;
+                left: 0.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+            .box_of_dots {
+              display: grid;
+              position: absolute;
+              width: 5.3rem;
+              height: 5.3rem;
+              z-index: 0;
+              right: 0;
+              bottom: -1rem;
+              .up_dots {
+                position: relative;
+                width: 5.3rem;
+                height: 5.3rem;
+                .dot {
+                  background-color: $ligt_blue;
+                  border-radius: 50%;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  opacity: 60%;
+                }
+                @for $i from 1 through 6 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 0;
+                    left: $i * 0.8rem;
+                  }
+                }
+                @for $i from 7 through 12 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 1 * 0.8rem;
+                    $a: $i - (1 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 13 through 18 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 2 * 0.8rem;
+                    $a: $i - (2 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 19 through 24 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 3 * 0.8rem;
+                    $a: $i - (3 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 25 through 30 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 4 * 0.8rem;
+                    $a: $i - (4 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 31 through 36 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 5 * 0.8rem;
+                    $a: $i - (5 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .box_four {
+          display: grid;
+          grid-row: 1 / 2;
+          grid-column: 4 / 5;
+          position: relative;
+          align-self: start;
+          align-items: center;
+          justify-items: center;
+          width: 100%;
+          height: 8rem;
+          .container4 {
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            width: 12rem;
+            height: 8rem;
+            position: relative;
+            .lesson_fourth_box {
+              width: 11.1rem;
+              height: 6.5rem;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              z-index: 1;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.87rem;
+                left: 0.7rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.6rem;
+                left: 0.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+            .box_of_dots {
+              display: grid;
+              position: absolute;
+              width: 5.3rem;
+              height: 5.3rem;
+              z-index: 0;
+              right: 0rem;
+              bottom: -1rem;
+              .up_dots {
+                position: relative;
+                width: 5.3rem;
+                height: 5.3rem;
+                .dot {
+                  background-color: $ligt_blue;
+                  border-radius: 50%;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  opacity: 60%;
+                }
+                @for $i from 1 through 6 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 0;
+                    left: $i * 0.8rem;
+                  }
+                }
+                @for $i from 7 through 12 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 1 * 0.8rem;
+                    $a: $i - (1 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 13 through 18 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 2 * 0.8rem;
+                    $a: $i - (2 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 19 through 24 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 3 * 0.8rem;
+                    $a: $i - (3 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 25 through 30 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 4 * 0.8rem;
+                    $a: $i - (4 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 31 through 36 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 5 * 0.8rem;
+                    $a: $i - (5 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .make_site_for_your_self {
+    display: grid;
+    width: 100%;
+    height: 33rem;
+    .container {
+      display: grid;
+      grid-template: 1fr / 1fr;
+      color: #ffffff;
+      background-color: #e6eef1;
+
+      line-height: 1.3;
+      justify-items: center;
+      align-items: center;
+      .rectangel_one {
+        display: grid;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        width: 80%;
+        height: 80%;
+        position: relative;
+        background-color: #cbd5db;
+        border-radius: 29px;
+        z-index: 1;
+        margin: 3.7rem 0 0 1.5rem;
+        .rectangel_two {
+          width: 100%;
+          height: 100%;
+          background-color: #96a3af;
+          z-index: 2;
+          border-radius: 29px;
+          position: absolute;
+          bottom: 0.7em;
+          right: 0.7em;
+          .rectangel_three {
+            width: 100%;
+            height: 100%;
+            background-color: #1d2f45;
+            z-index: 3;
+            border-radius: 29px;
+            position: absolute;
+            bottom: 1em;
+            right: 1em;
+            display: grid;
+            grid-template: 26.399rem / repeat(3, 1fr);
+            justify-items: center;
+            .head_image {
+              display: grid;
+              max-width: 100%;
+              height: 90%;
+              width: 18rem;
+              grid-row: 1 / 2;
+              grid-column: 3 / 4;
+              background-image: none;
+              .container_image {
+                position: relative;
+                width: 17rem;
+                height: 19.438rem;
+                display: grid;
+                justify-items: center;
+                .image {
+                  width: 14.3rem;
+                  height: 19.438rem;
+                  display: grid;
+                  position: absolute;
+                  z-index: 5;
+                  top: -2rem;
+                  background-image: url("../img/scott-graham-OQMZwNd3ThU-unsplash.jpg");
+                  background-position: 50% 50%;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  border-radius: 28px 89px 67px 89px;
+                }
+                .box_of_dots {
+                  position: absolute;
+                  width: 5.3rem;
+                  height: 5.3rem;
+                  z-index: 0;
+                  right: 0.5rem;
+                  bottom: 0.8rem;
+                  .up_dots {
+                    position: relative;
+                    width: 5.3rem;
+                    height: 5.3rem;
+                    .dot {
+                      background-color: $ligt_blue;
+                      border-radius: 50%;
+                      width: 0.4rem;
+                      height: 0.4rem;
+                    }
+                    @for $i from 1 through 6 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 0;
+                        left: $i * 0.8rem;
+                      }
+                    }
+                    @for $i from 7 through 12 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 1 * 0.8rem;
+                        $a: $i - (1 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 13 through 18 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 2 * 0.8rem;
+                        $a: $i - (2 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 19 through 24 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 3 * 0.8rem;
+                        $a: $i - (3 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 25 through 30 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 4 * 0.8rem;
+                        $a: $i - (4 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 31 through 36 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 5 * 0.8rem;
+                        $a: $i - (5 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                  }
+                }
+                .box_of_dot {
+                  position: absolute;
+                  width: 5.3rem;
+                  height: 5.3rem;
+                  z-index: 0;
+                  left: -0.6rem;
+                  top: 0.7rem;
+                  .down_dots {
+                    position: relative;
+                    width: 5.3rem;
+                    height: 5.3rem;
+                    .dot {
+                      background-color: $ligt_blue;
+                      border-radius: 50%;
+                      width: 0.4rem;
+                      height: 0.4rem;
+                    }
+                    @for $i from 1 through 6 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 0;
+                        left: $i * 0.8rem;
+                      }
+                    }
+                    @for $i from 7 through 12 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 1 * 0.8rem;
+                        $a: $i - (1 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 13 through 18 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 2 * 0.8rem;
+                        $a: $i - (2 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 19 through 24 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 3 * 0.8rem;
+                        $a: $i - (3 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 25 through 30 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 4 * 0.8rem;
+                        $a: $i - (4 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 31 through 36 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 5 * 0.8rem;
+                        $a: $i - (5 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .information {
+              width: 100%;
+              height: 100%;
+              padding: 2.7rem 2.5rem 0;
+              display: grid;
+              grid-row: 1 / 2;
+              grid-column: 1 / 3;
+              grid-template: repeat(3, 1fr) / 1fr;
+              color: #ffffff;
+              gap: 1.8rem;
+
+              line-height: 1.8;
+              border-radius: 0px 29px 29px 0px;
+              .info_header {
+                display: grid;
+                grid-row: 1 / 2;
+                align-items: center;
+                p {
+                  text-align: center;
+                  font-size: 1.6rem;
+                  span {
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                  }
+                }
+              }
+              .info_notification {
+                display: grid;
+                grid-row: 2 / 3;
+                align-items: center;
+                h5 {
+                  font-weight: 100;
+                  text-align: center;
+                  font-size: 0.85rem;
+                }
+              }
+              .info_button {
+                display: grid;
+                grid-row: 3 / 4;
+                align-items: center;
+                justify-items: center;
+                button {
+                  color: #1d2f45;
+                  background-color: white;
+                  font-size: 0.9rem;
+                  font-weight: 600;
+                  padding: 0.6rem;
+                  border-radius: 5px 19px 19px 19px;
+                  outline: none;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .head_image {
+        display: none;
+      }
+      .information {
+        display: none;
+
+        .info_header {
+          display: none;
+        }
+        .info_notification {
+          display: none;
+        }
+        .info_button {
+          display: none;
+        }
+      }
+    }
+  }
+  #sticky_box {
+    display: none;
+    background-color: #4777b5;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    padding: 0 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .slider-one {
+    display: grid;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/scott-graham-5fNmWej4tAA-unsplash.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    .why-our-site {
+      text-align: center;
+      margin-top: 2rem;
+      line-height: 1.9;
+      color: #ffffff;
+      h2 {
+        font-size: 1.7rem;
+      }
+      p {
+        margin-top: 1.2rem;
+        font-size: 0.85rem;
+        font-weight: 100;
+      }
+    }
+    .container {
+      display: grid;
+      justify-content: space-evenly;
+      justify-items: center;
+      align-items: center;
+      grid-template: 1fr / 0.7fr 14.375rem 0.4fr 14.375rem 0.4fr 14.375rem 0.7fr;
+      height: 18.75rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      .box_one {
+        display: grid;
+        width: 90%;
+        height: 90%;
+        background-color: #4777b5;
+        border-radius: 20px 75px 75px 75px;
+        grid-column: 2 / 3;
+
+        color: white;
+        line-height: 1.4;
+        font-size: 0.8rem;
+        grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        align-self: start;
+        .circles {
+          display: grid;
+          align-self: flex-start;
+          justify-self: flex-end;
+          position: relative;
+          .item1 {
+            position: absolute;
+            left: 1em;
+            top: 0.2em;
+            background-color: #252525;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item2 {
+            position: absolute;
+            background-color: #1d2f45;
+            left: 1.9em;
+            top: -0.2em;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item3 {
+            position: absolute;
+            left: 2.2em;
+            top: 0.7em;
+            background-color: #ca5d63;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item4 {
+            position: absolute;
+            top: 1.18em;
+            left: 1.29em;
+            background-color: #e6eef1;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+        }
+        .logo {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 50%;
+          width: 2.7rem;
+          height: 2.7rem;
+          grid-row: 2 / 3;
+          font-size: 1.5rem;
+          i {
+            color: #ca5d63;
+          }
+        }
+        .header {
+          display: grid;
+          grid-row: 3 / 4;
+          font-size: 0.9rem;
+          font-weight: 600;
+          p {
+            display: block;
+          }
+        }
+        .details {
+          display: grid;
+          grid-row: 4 / 5;
+          font-size: 0.7rem;
+          padding: 0 1.4em;
+          line-height: 1.8;
+        }
+      }
+      .box_two {
+        display: grid;
+        width: 90%;
+        height: 90%;
+        background-color: #4777b5;
+        grid-column: 4 / 5;
+        border-radius: 20px 75px 75px 75px;
+
+        color: white;
+        line-height: 1.4;
+        font-size: 0.8rem;
+        grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        align-self: end;
+        .circles {
+          display: grid;
+          align-self: flex-start;
+          justify-self: flex-end;
+          position: relative;
+          .item1 {
+            position: absolute;
+            left: 1em;
+            top: 0.2em;
+            background-color: #252525;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item2 {
+            position: absolute;
+            background-color: #1d2f45;
+            top: 1.18em;
+            left: 1.29em;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item3 {
+            position: absolute;
+            left: 2.2em;
+            top: 0.7em;
+            background-color: #ca5d63;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item4 {
+            position: absolute;
+            left: 1.9em;
+            top: -0.2em;
+            background-color: #e6eef1;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+        }
+        .logo {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 50%;
+          width: 2.7rem;
+          height: 2.7rem;
+          grid-row: 2 / 3;
+          font-size: 1.7rem;
+          grid-template: 1fr / 1fr;
+          position: relative;
+          .fa-chart-line {
+            display: none;
+          }
+          .fa-window-maximize {
+            display: grid;
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            color: $dark_red;
+            z-index: 0;
+          }
+          .fa-code {
+            display: grid;
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            color: $dark_red;
+            z-index: 1;
+            font-size: 0.67rem;
+            position: absolute;
+            bottom: 0.8rem;
+          }
+        }
+        .header {
+          display: grid;
+          grid-row: 3 / 4;
+          font-size: 0.9rem;
+          font-weight: 600;
+          p {
+            display: block;
+          }
+        }
+        .details {
+          display: grid;
+          grid-row: 4 / 5;
+          font-size: 0.7rem;
+          padding: 0 1.4em;
+          line-height: 1.8;
+        }
+      }
+      .box_three3 {
+        display: grid;
+        width: 90%;
+        height: 90%;
+        background-color: #4777b5;
+        grid-column: 6 / 7;
+        border-radius: 20px 75px 75px 75px;
+
+        color: white;
+        line-height: 1.4;
+        font-size: 0.8rem;
+        grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+        align-self: start;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        .circles {
+          display: grid;
+          align-self: flex-start;
+          justify-self: flex-end;
+          position: relative;
+          .item1 {
+            position: absolute;
+            left: 1.9em;
+            top: -0.2em;
+            background-color: #252525;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item2 {
+            position: absolute;
+            background-color: #1d2f45;
+            left: 2.2em;
+            top: 0.7em;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item3 {
+            position: absolute;
+            left: 1em;
+            top: 0.2em;
+            background-color: #ca5d63;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item4 {
+            position: absolute;
+            top: 1.18em;
+            left: 1.29em;
+            background-color: #e6eef1;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+        }
+        .logo {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 50%;
+          width: 2.7rem;
+          height: 2.7rem;
+          grid-row: 2 / 3;
+          font-size: 1.5rem;
+          i {
+            color: #ca5d63;
+          }
+        }
+        .header {
+          display: grid;
+          grid-row: 3 / 4;
+          font-size: 0.9rem;
+          font-weight: 600;
+          p {
+            display: block;
+          }
+        }
+        .details {
+          display: grid;
+          grid-row: 4 / 5;
+          font-size: 0.7rem;
+          padding: 0 1.4em;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+  .slider-two {
+    display: grid;
+    grid-template: 23rem 5rem / 1fr 1fr;
+    row-gap: 1.5em;
+    margin-top: 0rem;
+    .web_design_samples {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      padding: 2rem 0rem 0rem 0rem;
+      .sample_one {
+        display: grid;
+        width: 16rem;
+        height: 22rem;
+        background-image: url("../img/theme33.w_370,h_492,r_ct,s_n.jpg");
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0px 30px 15px 0px #00000026;
+      }
+    }
+    .next_and_perv_buttons {
+      display: grid;
+      grid-template: 1fr / repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      opacity: 100%;
+      color: #4777b5;
+      font-size: 2.5rem;
+      column-gap: 1em;
+      .next {
+        justify-self: end;
+      }
+      .perv {
+        justify-self: start;
+      }
+    }
+    .bars {
+      display: grid;
+      background-color: #4777b5;
+      grid-row: 1 / 3;
+      grid-column: 2 / 3;
+      .container {
+        display: grid;
+        grid-template: 1fr 7rem 1fr / 1fr;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+        color: white;
+
+        row-gap: 1em;
+        line-height: 1.6;
+        header {
+          display: grid;
+          grid-row: 1 / 2;
+          font-size: 2rem;
+          margin: 1.7rem 2rem 0rem 0rem;
+          justify-self: start;
+          align-self: end;
+        }
+        .details {
+          display: grid;
+          line-height: 1.8;
+          grid-row: 2 / 3;
+          font-size: 1rem;
+          padding: 0rem 1rem 0rem 1.5rem;
+          justify-self: start;
+          text-align: start;
+        }
+        .button {
+          display: grid;
+          align-self: start;
+          justify-self: start;
+          grid-row: 3 / 4;
+          font-size: 0.9rem;
+          text-decoration: none;
+          color: white;
+          border: 1px solid white;
+          border-radius: 5px 19px 19px 19px;
+          padding: 0.7em 1.5em;
+          margin: 0rem 2rem 0rem 0rem;
+        }
+      }
+    }
+  }
+  .bars {
+    display: none;
+  }
+  .about_us {
+    background: linear-gradient(rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.5)),
+      url("../img/headway-5QgIuuBxKwM-unsplash.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template: 18.5rem / repeat(2, 1fr);
+
+    color: white;
+    .detail {
+      display: grid;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      grid-template: repeat(2, 1fr) / 1fr;
+      justify-items: center;
+      text-align: center;
+      line-height: 1.6;
+      align-items: center;
+      font-weight: 300;
+      .head {
+        font-size: 1rem;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        padding: 1.7em 2em 0;
+      }
+      .button {
+        font-size: 0.9rem;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        border: 1px solid white;
+        padding: 1em 1.4em;
+        border-radius: 5px 19px 19px 19px;
+      }
+    }
+  }
+  footer {
+    display: grid;
+    background-color: #1d2f45;
+    .container {
+      display: grid;
+      grid-template: auto auto auto / 1fr;
+      justify-items: center;
+      text-align: center;
+      align-items: center;
+      row-gap: 2.2em;
+      line-height: 1.6;
+
+      .user_logo {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        font-size: 2.4rem;
+        width: 1.5em;
+        height: 1.5em;
+        background-color: #ecf0f1;
+        border-radius: 15px;
+        grid-row: 1 / 2;
+        margin-top: 1.5rem;
+        i {
+          color: #1d2f45;
+        }
+      }
+      .details {
+        display: grid;
+
+        color: white;
+        grid-row: 2 / 3;
+        grid-template: 1fr / repeat(4, 1fr);
+        padding: 0rem;
+        line-height: 1.8;
+        font-size: 0.9rem;
+        p {
+          display: grid;
+          grid-row: 1 / 2;
+          grid-column: 2 / 4;
+        }
+      }
+      .social_network_logos {
+        display: grid;
+        color: #ecf0f1;
+        grid-row: 3 / 4;
+        font-size: 2.7rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        column-gap: 0.9em;
+        margin-bottom: 1.5rem;
+        .fa-instagram {
+          grid-column: 1 / 2;
+        }
+        .fa-whatsapp {
+          grid-column: 2 / 3;
+        }
+        .fa-telegram {
+          grid-column: 3 / 4;
+        }
+      }
+    }
+  }
+}
+
+/**                                                     web          
+  */
+
+@media screen and (min-width: 1441px) and (max-width: 1921px) {
+  .top_header {
+    background-color: #1d2f45;
+    display: grid;
+    grid-template: 3.5rem 1fr / repeat(2, 1fr);
+    margin-bottom: 2rem;
+    .header_top {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      grid-row: 1 / 2;
+      grid-column: 1 / 3;
+      .navigation-bar {
+        margin-top: 1rem;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template: 1fr / 13rem auto 13rem;
+        font-size: 2.6rem;
+        .logo {
+          display: grid;
+          align-items: center;
+          justify-items: center;
+          width: 1.3em;
+          height: 1.3em;
+          background-color: #ecf0f1;
+          border-radius: 15px;
+          grid-column: 1 / 2;
+          cursor: url("../cursor/gam1228.cur"), pointer;
+          i {
+            color: #1d2f45;
+          }
+        }
+        button {
+          display: none;
+        }
+        .nav_option {
+          display: grid;
+          grid-column: 2 / 3;
+          grid-row: 1 / 2;
+
+          color: white;
+          width: 30rem;
+          height: 100%;
+          font-size: 0.8rem;
+          grid-template: 1fr / repeat(5, 1fr);
+          .first {
+            display: grid;
+            position: relative;
+            grid-column: 1 / 2;
+            .top_border {
+              display: grid;
+              background-color: $ligt_blue;
+              border-radius: 5px;
+              position: absolute;
+              top: 0;
+              width: 100%;
+              height: 4px;
+              box-shadow: 0px 3px 6px $ligt_blue;
+            }
+            .one {
+              display: grid;
+              justify-items: center;
+              align-items: center;
+              grid-template: 1fr;
+              a {
+                color: $ligt_blue;
+                text-decoration: none;
+                cursor: url("../cursor/gam1228.cur"), pointer;
+              }
+            }
+          }
+          .second {
+            display: grid;
+            position: relative;
+            grid-column: 2 / 3;
+            .top_border {
+              display: none;
+            }
+            .two {
+              display: grid;
+              justify-items: center;
+              align-items: center;
+              a {
+                text-decoration: none;
+                color: white;
+              }
+            }
+            &:hover {
+              .top_border {
+                display: grid;
+                background-color: $ligt_blue;
+                border-radius: 5px;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 4px;
+                box-shadow: 0px 3px 6px $ligt_blue;
+              }
+              .two {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                a {
+                  color: $ligt_blue;
+                  cursor: url("../cursor/gam1228.cur"), pointer;
+                }
+              }
+            }
+          }
+          .third {
+            display: grid;
+            position: relative;
+            grid-column: 3 / 4;
+            .top_border {
+              display: none;
+            }
+            .three {
+              display: grid;
+              justify-items: center;
+              align-items: center;
+              a {
+                text-decoration: none;
+                color: white;
+              }
+            }
+            &:hover {
+              .top_border {
+                display: grid;
+                background-color: $ligt_blue;
+                border-radius: 5px;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 4px;
+                box-shadow: 0px 3px 6px $ligt_blue;
+              }
+              .three {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                a {
+                  color: $ligt_blue;
+                  cursor: url("../cursor/gam1228.cur"), pointer;
+                }
+              }
+            }
+          }
+          .fourth {
+            display: grid;
+            position: relative;
+            grid-column: 4 / 5;
+            .top_border {
+              display: none;
+            }
+            .four {
+              display: grid;
+              justify-items: center;
+              align-items: center;
+              a {
+                text-decoration: none;
+                color: white;
+              }
+            }
+            &:hover {
+              .top_border {
+                display: grid;
+                background-color: $ligt_blue;
+                border-radius: 5px;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 4px;
+                box-shadow: 0px 3px 6px $ligt_blue;
+              }
+              .four {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                a {
+                  color: $ligt_blue;
+                  cursor: url("../cursor/gam1228.cur"), pointer;
+                }
+              }
+            }
+          }
+          .fifth {
+            display: grid;
+            position: relative;
+            grid-column: 5 / 6;
+            .top_border {
+              display: none;
+            }
+            .five {
+              display: grid;
+              justify-items: center;
+              align-items: center;
+              a {
+                text-decoration: none;
+                color: white;
+              }
+            }
+            &:hover {
+              .top_border {
+                display: grid;
+                background-color: $ligt_blue;
+                border-radius: 5px;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 4px;
+                box-shadow: 0px 3px 6px $ligt_blue;
+              }
+              .five {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                a {
+                  color: $ligt_blue;
+                  cursor: url("../cursor/gam1228.cur"), pointer;
+                }
+              }
+            }
+          }
+        }
+        .sign_up {
+          display: grid;
+          grid-column: 3 / 4;
+          border: none;
+          border-radius: 5px 19px 19px 19px;
+          background-color: #ca5d63;
+          &:hover {
+            box-shadow: 0px 0px 15px 3px #ca5d63;
+          }
+          padding: 0.8rem 1.1rem;
+          cursor: url("../cursor/gam1228.cur"), pointer;
+          p {
+            font-size: 1rem;
+            color: white;
+          }
+        }
+      }
+    }
+    .hed_image {
+      display: grid;
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      position: relative;
+      justify-items: center;
+      align-items: flex-end;
+      .container {
+        width: 20rem;
+        height: 23rem;
+        position: relative;
+        .image {
+          width: 18rem;
+          height: 21rem;
+          background-image: url("../img/pexels-fauxels-3184287.jpg");
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          box-shadow: 0px 5px 42px -5px rgba(33, 33, 33, 0.77);
+          position: absolute;
+          bottom: -2.1rem;
+          right: 15%;
+          border-radius: 28px 89px 67px 89px;
+          z-index: 1;
+        }
+        .box_of_dots {
+          position: absolute;
+          width: 5.3rem;
+          height: 5.3rem;
+          z-index: 0;
+          right: 2.1rem;
+          top: 3.3rem;
+          .up_dots {
+            position: relative;
+            width: 5.3rem;
+            height: 5.3rem;
+            .dot {
+              background-color: $ligt_blue;
+              border-radius: 50%;
+              width: 0.4rem;
+              height: 0.4rem;
+            }
+            @for $i from 1 through 6 {
+              .item_#{$i} {
+                position: absolute;
+                top: 0;
+                left: $i * 0.8rem;
+              }
+            }
+            @for $i from 7 through 12 {
+              .item_#{$i} {
+                position: absolute;
+                top: 1 * 0.8rem;
+                $a: $i - (1 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 13 through 18 {
+              .item_#{$i} {
+                position: absolute;
+                top: 2 * 0.8rem;
+                $a: $i - (2 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 19 through 24 {
+              .item_#{$i} {
+                position: absolute;
+                top: 3 * 0.8rem;
+                $a: $i - (3 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 25 through 30 {
+              .item_#{$i} {
+                position: absolute;
+                top: 4 * 0.8rem;
+                $a: $i - (4 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 31 through 36 {
+              .item_#{$i} {
+                position: absolute;
+                top: 5 * 0.8rem;
+                $a: $i - (5 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+          }
+        }
+        .box_of_dot {
+          position: absolute;
+          width: 5.3rem;
+          height: 5.3rem;
+          z-index: 0;
+          left: -3.6rem;
+          bottom: 1rem;
+          .down_dots {
+            position: relative;
+            width: 5.3rem;
+            height: 5.3rem;
+            .dot {
+              background-color: $ligt_blue;
+              border-radius: 50%;
+              width: 0.4rem;
+              height: 0.4rem;
+            }
+            @for $i from 1 through 6 {
+              .item_#{$i} {
+                position: absolute;
+                top: 0;
+                left: $i * 0.8rem;
+              }
+            }
+            @for $i from 7 through 12 {
+              .item_#{$i} {
+                position: absolute;
+                top: 1 * 0.8rem;
+                $a: $i - (1 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 13 through 18 {
+              .item_#{$i} {
+                position: absolute;
+                top: 2 * 0.8rem;
+                $a: $i - (2 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 19 through 24 {
+              .item_#{$i} {
+                position: absolute;
+                top: 3 * 0.8rem;
+                $a: $i - (3 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 25 through 30 {
+              .item_#{$i} {
+                position: absolute;
+                top: 4 * 0.8rem;
+                $a: $i - (4 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+            @for $i from 31 through 36 {
+              .item_#{$i} {
+                position: absolute;
+                top: 5 * 0.8rem;
+                $a: $i - (5 * 6);
+                left: $a * 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .header_buttom {
+      display: grid;
+      grid-template: repeat(2, 1fr) 4rem / 1fr;
+      padding: 2.5rem 2.5rem 0.8rem;
+      color: #ffffff;
+      row-gap: 2rem;
+      column-gap: 1em;
+
+      line-height: 1.4;
+      grid-row: 2 / 3;
+      .first_header {
+        display: grid;
+        grid-row: 1 / 2;
+        align-items: center;
+        p {
+          text-align: center;
+          font-size: 1.6rem;
+          span {
+            display: block;
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+      .site_header_info {
+        display: grid;
+        grid-row: 2 / 3;
+        align-items: center;
+        h5 {
+          font-weight: 100;
+          text-align: center;
+          font-size: 0.9rem;
+          line-height: 1.9;
+          span {
+            color: #ca5d63;
+          }
+        }
+      }
+      .start_button {
+        display: grid;
+        grid-row: 3 / 4;
+        align-items: center;
+        justify-items: center;
+        button {
+          cursor: url("../cursor/gam1228.cur"), pointer;
+          background-color: inherit;
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 100;
+          border-color: white;
+          padding: 0.4rem;
+          border-radius: 5px 19px 19px 19px;
+          outline: none;
+        }
+      }
+    }
+  }
+  .start_menu_for_beginers {
+    padding: 2rem 1rem;
+
+    .container {
+      display: grid;
+      .header_section {
+        font-size: 1rem;
+        display: grid;
+        justify-content: center;
+        header {
+          position: relative;
+          width: 23rem;
+          padding: 0 0 1em 0;
+          border-left: 1px solid black;
+          border-right: 1px solid black;
+          span {
+            display: block;
+          }
+          .rectangel {
+            position: absolute;
+            bottom: -0.1em;
+            right: 15rem;
+            background: #d66b6b;
+            opacity: 36%;
+            width: 4rem;
+            height: 1.2rem;
+            z-index: -1;
+          }
+        }
+      }
+      .menu_for_start {
+        display: grid;
+        grid-template: 14rem / repeat(4, 1fr);
+
+        font-size: 1.3rem;
+        color: white;
+        margin-top: 2rem;
+        row-gap: 0;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        column-gap: 0.3em;
+        .circle {
+          &_grey {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            background: #252525;
+            opacity: 41%;
+            align-self: flex-start;
+            justify-self: flex-start;
+          }
+          &_red {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            background: #ca5d63;
+            opacity: 41%;
+            align-self: flex-end;
+            justify-self: flex-end;
+          }
+          &_blue {
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 50%;
+            background: #4777b5;
+            opacity: 41%;
+            align-self: start;
+            justify-self: center;
+            position: absolute;
+            top: -4.5rem;
+          }
+        }
+        .box_one {
+          display: grid;
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+          position: relative;
+          align-items: center;
+          width: 100%;
+          height: 8rem;
+          justify-items: center;
+          .container1 {
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            width: 12rem;
+            height: 8rem;
+            position: relative;
+            .lesson_first_box {
+              width: 11.1rem;
+              height: 6.5rem;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              z-index: 1;
+              cursor: url("../cursor/gam1228.cur"), pointer;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.87rem;
+                left: 0.7rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.6rem;
+                left: 0.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+            .box_of_dots {
+              display: grid;
+              position: absolute;
+              width: 5.3rem;
+              height: 5.3rem;
+              z-index: 0;
+              right: 0;
+              bottom: -1rem;
+              .up_dots {
+                position: relative;
+                width: 5.3rem;
+                height: 5.3rem;
+                .dot {
+                  background-color: $ligt_blue;
+                  border-radius: 50%;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  opacity: 60%;
+                }
+                @for $i from 1 through 6 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 0;
+                    left: $i * 0.8rem;
+                  }
+                }
+                @for $i from 7 through 12 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 1 * 0.8rem;
+                    $a: $i - (1 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 13 through 18 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 2 * 0.8rem;
+                    $a: $i - (2 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 19 through 24 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 3 * 0.8rem;
+                    $a: $i - (3 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 25 through 30 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 4 * 0.8rem;
+                    $a: $i - (4 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 31 through 36 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 5 * 0.8rem;
+                    $a: $i - (5 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .box_two {
+          display: grid;
+          grid-column: 2 / 3;
+          grid-row: 1 / 2;
+          position: relative;
+          align-self: start;
+          align-items: center;
+          width: 100%;
+          height: 8rem;
+          justify-items: center;
+          .container2 {
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            width: 12rem;
+            height: 8rem;
+            position: relative;
+            .lesson_second_box {
+              width: 11.1rem;
+              height: 6.5rem;
+              justify-self: end;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              z-index: 1;
+              cursor: url("../cursor/gam1228.cur"), pointer;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.87rem;
+                left: 0.7rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.6rem;
+                left: 0.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+            .box_of_dots {
+              display: grid;
+              position: absolute;
+              width: 5.3rem;
+              height: 5.3rem;
+              z-index: 0;
+              right: 0;
+              bottom: -1rem;
+              .up_dots {
+                position: relative;
+                width: 5.3rem;
+                height: 5.3rem;
+                .dot {
+                  background-color: $ligt_blue;
+                  border-radius: 50%;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  opacity: 60%;
+                }
+                @for $i from 1 through 6 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 0;
+                    left: $i * 0.8rem;
+                  }
+                }
+                @for $i from 7 through 12 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 1 * 0.8rem;
+                    $a: $i - (1 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 13 through 18 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 2 * 0.8rem;
+                    $a: $i - (2 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 19 through 24 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 3 * 0.8rem;
+                    $a: $i - (3 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 25 through 30 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 4 * 0.8rem;
+                    $a: $i - (4 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 31 through 36 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 5 * 0.8rem;
+                    $a: $i - (5 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .box_three {
+          display: grid;
+          grid-row: 1 / 2;
+          grid-column: 3 / 4;
+          position: relative;
+          align-items: center;
+          width: 100%;
+          height: 8rem;
+          justify-items: center;
+          .container3 {
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            width: 12rem;
+            height: 8rem;
+            position: relative;
+            .lesson_third_box {
+              width: 11.1rem;
+              height: 6.5rem;
+              justify-self: end;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              z-index: 1;
+              cursor: url("../cursor/gam1228.cur"), pointer;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.87rem;
+                left: 0.7rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.6rem;
+                left: 0.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+            .box_of_dots {
+              display: grid;
+              position: absolute;
+              width: 5.3rem;
+              height: 5.3rem;
+              z-index: 0;
+              right: 0;
+              bottom: -1rem;
+              .up_dots {
+                position: relative;
+                width: 5.3rem;
+                height: 5.3rem;
+                .dot {
+                  background-color: $ligt_blue;
+                  border-radius: 50%;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  opacity: 60%;
+                }
+                @for $i from 1 through 6 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 0;
+                    left: $i * 0.8rem;
+                  }
+                }
+                @for $i from 7 through 12 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 1 * 0.8rem;
+                    $a: $i - (1 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 13 through 18 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 2 * 0.8rem;
+                    $a: $i - (2 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 19 through 24 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 3 * 0.8rem;
+                    $a: $i - (3 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 25 through 30 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 4 * 0.8rem;
+                    $a: $i - (4 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 31 through 36 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 5 * 0.8rem;
+                    $a: $i - (5 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .box_four {
+          display: grid;
+          grid-row: 1 / 2;
+          grid-column: 4 / 5;
+          position: relative;
+          align-self: start;
+          align-items: center;
+          justify-items: center;
+          width: 100%;
+          height: 8rem;
+          .container4 {
+            display: grid;
+            align-items: center;
+            justify-items: end;
+            width: 12rem;
+            height: 8rem;
+            position: relative;
+            .lesson_fourth_box {
+              width: 11.1rem;
+              height: 6.5rem;
+              background-color: #1d2f45;
+              border-radius: 20px 75px 75px 75px;
+              display: grid;
+              align-items: center;
+              z-index: 1;
+              cursor: url("../cursor/gam1228.cur"), pointer;
+              .circle-blue-first {
+                position: absolute;
+                top: 0.2rem;
+                left: 1.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+              .circle-red {
+                position: absolute;
+                top: 0.87rem;
+                left: 0.7rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 3px 9px 10px 10px;
+                background: #ca5d63;
+              }
+              .circle-blue-second {
+                position: absolute;
+                top: 1.6rem;
+                left: 0.2rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 50%;
+                background: #4777b5;
+              }
+            }
+            .box_of_dots {
+              display: grid;
+              position: absolute;
+              width: 5.3rem;
+              height: 5.3rem;
+              z-index: 0;
+              right: 0rem;
+              bottom: -1rem;
+              .up_dots {
+                position: relative;
+                width: 5.3rem;
+                height: 5.3rem;
+                .dot {
+                  background-color: $ligt_blue;
+                  border-radius: 50%;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                  opacity: 60%;
+                }
+                @for $i from 1 through 6 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 0;
+                    left: $i * 0.8rem;
+                  }
+                }
+                @for $i from 7 through 12 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 1 * 0.8rem;
+                    $a: $i - (1 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 13 through 18 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 2 * 0.8rem;
+                    $a: $i - (2 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 19 through 24 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 3 * 0.8rem;
+                    $a: $i - (3 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 25 through 30 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 4 * 0.8rem;
+                    $a: $i - (4 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+                @for $i from 31 through 36 {
+                  .item_#{$i} {
+                    position: absolute;
+                    top: 5 * 0.8rem;
+                    $a: $i - (5 * 6);
+                    left: $a * 0.8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .make_site_for_your_self {
+    display: grid;
+    width: 100%;
+    height: 33rem;
+    .container {
+      display: grid;
+      grid-template: 1fr / 1fr;
+      color: #ffffff;
+      background-color: #e6eef1;
+
+      line-height: 1.3;
+      justify-items: center;
+      align-items: center;
+      .rectangel_one {
+        display: grid;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        width: 80%;
+        height: 80%;
+        position: relative;
+        background-color: #cbd5db;
+        border-radius: 29px;
+        z-index: 1;
+        margin: 3.7rem 0 0 1.5rem;
+        .rectangel_two {
+          width: 100%;
+          height: 100%;
+          background-color: #96a3af;
+          z-index: 2;
+          border-radius: 29px;
+          position: absolute;
+          bottom: 0.7em;
+          right: 0.7em;
+          .rectangel_three {
+            width: 100%;
+            height: 100%;
+            background-color: #1d2f45;
+            z-index: 3;
+            border-radius: 29px;
+            position: absolute;
+            bottom: 1em;
+            right: 1em;
+            display: grid;
+            grid-template: 26.399rem / repeat(3, 1fr);
+            justify-items: center;
+            .head_image {
+              display: grid;
+              max-width: 100%;
+              height: 90%;
+              width: 18rem;
+              grid-row: 1 / 2;
+              grid-column: 3 / 4;
+              background-image: none;
+              .container_image {
+                position: relative;
+                width: 17rem;
+                height: 19.438rem;
+                display: grid;
+                justify-items: center;
+                .image {
+                  width: 14.3rem;
+                  height: 19.438rem;
+                  display: grid;
+                  position: absolute;
+                  z-index: 5;
+                  top: -2rem;
+                  background-image: url("../img/scott-graham-OQMZwNd3ThU-unsplash.jpg");
+                  background-position: 50% 50%;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  border-radius: 28px 89px 67px 89px;
+                }
+                .box_of_dots {
+                  position: absolute;
+                  width: 5.3rem;
+                  height: 5.3rem;
+                  z-index: 0;
+                  right: 0.5rem;
+                  bottom: 0.8rem;
+                  .up_dots {
+                    position: relative;
+                    width: 5.3rem;
+                    height: 5.3rem;
+                    .dot {
+                      background-color: $ligt_blue;
+                      border-radius: 50%;
+                      width: 0.4rem;
+                      height: 0.4rem;
+                    }
+                    @for $i from 1 through 6 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 0;
+                        left: $i * 0.8rem;
+                      }
+                    }
+                    @for $i from 7 through 12 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 1 * 0.8rem;
+                        $a: $i - (1 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 13 through 18 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 2 * 0.8rem;
+                        $a: $i - (2 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 19 through 24 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 3 * 0.8rem;
+                        $a: $i - (3 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 25 through 30 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 4 * 0.8rem;
+                        $a: $i - (4 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 31 through 36 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 5 * 0.8rem;
+                        $a: $i - (5 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                  }
+                }
+                .box_of_dot {
+                  position: absolute;
+                  width: 5.3rem;
+                  height: 5.3rem;
+                  z-index: 0;
+                  left: -0.6rem;
+                  top: 0.7rem;
+                  .down_dots {
+                    position: relative;
+                    width: 5.3rem;
+                    height: 5.3rem;
+                    .dot {
+                      background-color: $ligt_blue;
+                      border-radius: 50%;
+                      width: 0.4rem;
+                      height: 0.4rem;
+                    }
+                    @for $i from 1 through 6 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 0;
+                        left: $i * 0.8rem;
+                      }
+                    }
+                    @for $i from 7 through 12 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 1 * 0.8rem;
+                        $a: $i - (1 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 13 through 18 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 2 * 0.8rem;
+                        $a: $i - (2 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 19 through 24 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 3 * 0.8rem;
+                        $a: $i - (3 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 25 through 30 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 4 * 0.8rem;
+                        $a: $i - (4 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                    @for $i from 31 through 36 {
+                      .item_#{$i} {
+                        position: absolute;
+                        top: 5 * 0.8rem;
+                        $a: $i - (5 * 6);
+                        left: $a * 0.8rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .information {
+              width: 100%;
+              height: 100%;
+              padding: 2.7rem 2.5rem 0;
+              display: grid;
+              grid-row: 1 / 2;
+              grid-column: 1 / 3;
+              grid-template: repeat(3, 1fr) / 1fr;
+              color: #ffffff;
+              gap: 1.8rem;
+
+              line-height: 1.8;
+              border-radius: 0px 29px 29px 0px;
+              .info_header {
+                display: grid;
+                grid-row: 1 / 2;
+                align-items: center;
+                p {
+                  text-align: center;
+                  font-size: 1.6rem;
+                  span {
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                  }
+                }
+              }
+              .info_notification {
+                display: grid;
+                grid-row: 2 / 3;
+                align-items: center;
+                h5 {
+                  font-weight: 100;
+                  text-align: center;
+                  font-size: 0.85rem;
+                }
+              }
+              .info_button {
+                display: grid;
+                grid-row: 3 / 4;
+                align-items: center;
+                justify-items: center;
+                button {
+                  cursor: url("../cursor/gam1228.cur"), pointer;
+                  color: #1d2f45;
+                  background-color: white;
+                  font-size: 0.9rem;
+                  font-weight: 600;
+                  padding: 0.6rem;
+                  border-radius: 5px 19px 19px 19px;
+                  outline: none;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .head_image {
+        display: none;
+      }
+      .information {
+        display: none;
+
+        .info_header {
+          display: none;
+        }
+        .info_notification {
+          display: none;
+        }
+        .info_button {
+          display: none;
+        }
+      }
+    }
+  }
+  #sticky_box {
+    display: none;
+    background-color: #4777b5;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .slider-one {
+    display: grid;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/scott-graham-5fNmWej4tAA-unsplash.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    .why-our-site {
+      text-align: center;
+      margin-top: 2rem;
+      line-height: 1.9;
+      color: #ffffff;
+      h2 {
+        font-size: 1.7rem;
+      }
+      p {
+        margin-top: 1.2rem;
+        font-size: 0.85rem;
+        font-weight: 100;
+      }
+    }
+    .container {
+      display: grid;
+      justify-content: space-evenly;
+      justify-items: center;
+      align-items: center;
+      grid-template: 1fr / 0.7fr 14.375rem 0.4fr 14.375rem 0.4fr 14.375rem 0.7fr;
+      height: 18.75rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      .box_one {
+        display: grid;
+        width: 90%;
+        height: 90%;
+        background-color: #4777b5;
+        border-radius: 20px 75px 75px 75px;
+        grid-column: 2 / 3;
+
+        color: white;
+        line-height: 1.4;
+        font-size: 0.8rem;
+        grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        align-self: start;
+        .circles {
+          display: grid;
+          align-self: flex-start;
+          justify-self: flex-end;
+          position: relative;
+          .item1 {
+            position: absolute;
+            left: 1em;
+            top: 0.2em;
+            background-color: #252525;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item2 {
+            position: absolute;
+            background-color: #1d2f45;
+            left: 1.9em;
+            top: -0.2em;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item3 {
+            position: absolute;
+            left: 2.2em;
+            top: 0.7em;
+            background-color: #ca5d63;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item4 {
+            position: absolute;
+            top: 1.18em;
+            left: 1.29em;
+            background-color: #e6eef1;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+        }
+        .logo {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 50%;
+          width: 2.7rem;
+          height: 2.7rem;
+          grid-row: 2 / 3;
+          font-size: 1.5rem;
+          i {
+            color: #ca5d63;
+          }
+        }
+        .header {
+          display: grid;
+          grid-row: 3 / 4;
+          font-size: 0.9rem;
+          font-weight: 600;
+          p {
+            display: block;
+          }
+        }
+        .details {
+          display: grid;
+          grid-row: 4 / 5;
+          font-size: 0.7rem;
+          padding: 0 1.4em;
+          line-height: 1.8;
+        }
+      }
+      .box_two {
+        display: grid;
+        width: 90%;
+        height: 90%;
+        background-color: #4777b5;
+        grid-column: 4 / 5;
+        border-radius: 20px 75px 75px 75px;
+
+        color: white;
+        line-height: 1.4;
+        font-size: 0.8rem;
+        grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        align-self: end;
+        .circles {
+          display: grid;
+          align-self: flex-start;
+          justify-self: flex-end;
+          position: relative;
+          .item1 {
+            position: absolute;
+            left: 1em;
+            top: 0.2em;
+            background-color: #252525;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item2 {
+            position: absolute;
+            background-color: #1d2f45;
+            top: 1.18em;
+            left: 1.29em;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item3 {
+            position: absolute;
+            left: 2.2em;
+            top: 0.7em;
+            background-color: #ca5d63;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item4 {
+            position: absolute;
+            left: 1.9em;
+            top: -0.2em;
+            background-color: #e6eef1;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+        }
+        .logo {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 50%;
+          width: 2.7rem;
+          height: 2.7rem;
+          grid-row: 2 / 3;
+          font-size: 1.7rem;
+          grid-template: 1fr / 1fr;
+          position: relative;
+          .fa-chart-line {
+            display: none;
+          }
+          .fa-window-maximize {
+            display: grid;
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            color: $dark_red;
+            z-index: 0;
+          }
+          .fa-code {
+            display: grid;
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            color: $dark_red;
+            z-index: 1;
+            font-size: 0.67rem;
+            position: absolute;
+            bottom: 0.8rem;
+          }
+        }
+        .header {
+          display: grid;
+          grid-row: 3 / 4;
+          font-size: 0.9rem;
+          font-weight: 600;
+          p {
+            display: block;
+          }
+        }
+        .details {
+          display: grid;
+          grid-row: 4 / 5;
+          font-size: 0.7rem;
+          padding: 0 1.4em;
+          line-height: 1.8;
+        }
+      }
+      .box_three3 {
+        display: grid;
+        width: 90%;
+        height: 90%;
+        background-color: #4777b5;
+        grid-column: 6 / 7;
+        border-radius: 20px 75px 75px 75px;
+
+        color: white;
+        line-height: 1.4;
+        font-size: 0.8rem;
+        grid-template: 2rem 2.5rem 4rem 6.5rem / 1fr;
+        align-self: start;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        .circles {
+          display: grid;
+          align-self: flex-start;
+          justify-self: flex-end;
+          position: relative;
+          .item1 {
+            position: absolute;
+            left: 1.9em;
+            top: -0.2em;
+            background-color: #252525;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item2 {
+            position: absolute;
+            background-color: #1d2f45;
+            left: 2.2em;
+            top: 0.7em;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item3 {
+            position: absolute;
+            left: 1em;
+            top: 0.2em;
+            background-color: #ca5d63;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+          .item4 {
+            position: absolute;
+            top: 1.18em;
+            left: 1.29em;
+            background-color: #e6eef1;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+          }
+        }
+        .logo {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          background-color: white;
+          border-radius: 50%;
+          width: 2.7rem;
+          height: 2.7rem;
+          grid-row: 2 / 3;
+          font-size: 1.5rem;
+          i {
+            color: #ca5d63;
+          }
+        }
+        .header {
+          display: grid;
+          grid-row: 3 / 4;
+          font-size: 0.9rem;
+          font-weight: 600;
+          p {
+            display: block;
+          }
+        }
+        .details {
+          display: grid;
+          grid-row: 4 / 5;
+          font-size: 0.7rem;
+          padding: 0 1.4em;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+  .slider-two {
+    display: grid;
+    grid-template: 23rem 5rem / 1fr 1fr;
+    row-gap: 1.5em;
+    margin-top: 0rem;
+    .web_design_samples {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      padding: 2rem 0rem 0rem 0rem;
+      .sample_one {
+        display: grid;
+        width: 16rem;
+        height: 22rem;
+        background-image: url("../img/theme33.w_370,h_492,r_ct,s_n.jpg");
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0px 30px 15px 0px #00000026;
+      }
+    }
+    .next_and_perv_buttons {
+      display: grid;
+      grid-template: 1fr / repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      opacity: 100%;
+      color: #4777b5;
+      font-size: 2.5rem;
+      column-gap: 1em;
+      .next {
+        justify-self: end;
+        cursor: url("../cursor/gam1228.cur"), pointer;
+      }
+      .perv {
+        justify-self: start;
+        cursor: url("../cursor/gam1228.cur"), pointer;
+      }
+    }
+    .bars {
+      display: grid;
+      background-color: #4777b5;
+      grid-row: 1 / 3;
+      grid-column: 2 / 3;
+      .container {
+        display: grid;
+        grid-template: 1fr 7rem 1fr / 1fr;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+        color: white;
+
+        row-gap: 1em;
+        line-height: 1.6;
+        header {
+          display: grid;
+          grid-row: 1 / 2;
+          font-size: 2rem;
+          margin: 1.7rem 2rem 0rem 0rem;
+          justify-self: start;
+          align-self: end;
+        }
+        .details {
+          display: grid;
+          line-height: 1.8;
+          grid-row: 2 / 3;
+          font-size: 1rem;
+          padding: 0rem 1rem 0rem 1.5rem;
+          justify-self: start;
+          text-align: start;
+        }
+        .button {
+          display: grid;
+          align-self: start;
+          justify-self: start;
+          grid-row: 3 / 4;
+          font-size: 0.9rem;
+          text-decoration: none;
+          color: white;
+          border: 1px solid white;
+          border-radius: 5px 19px 19px 19px;
+          padding: 0.7em 1.5em;
+          margin: 0rem 2rem 0rem 0rem;
+        }
+      }
+    }
+  }
+  .bars {
+    display: none;
+  }
+  .about_us {
+    background: linear-gradient(rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.5)),
+      url("../img/headway-5QgIuuBxKwM-unsplash.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template: 18.5rem / repeat(2, 1fr);
+
+    color: white;
+    .detail {
+      display: grid;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      grid-template: repeat(2, 1fr) / 1fr;
+      justify-items: center;
+      text-align: center;
+      line-height: 1.6;
+      align-items: center;
+      font-weight: 300;
+      .head {
+        font-size: 1rem;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        padding: 1.7em 2em 0;
+      }
+      .button {
+        font-size: 0.9rem;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        border: 1px solid white;
+        padding: 1em 1.4em;
+        border-radius: 5px 19px 19px 19px;
+        cursor: url("../cursor/gam1228.cur"), pointer;
+      }
+    }
+  }
+  footer {
+    display: grid;
+    background-color: #1d2f45;
+    .container {
+      display: grid;
+      grid-template: auto auto auto / 1fr;
+      justify-items: center;
+      text-align: center;
+      align-items: center;
+      row-gap: 2.2em;
+      line-height: 1.6;
+
+      .user_logo {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        font-size: 2.4rem;
+        width: 1.5em;
+        height: 1.5em;
+        background-color: #ecf0f1;
+        border-radius: 15px;
+        grid-row: 1 / 2;
+        margin-top: 1.5rem;
+        cursor: url("../cursor/gam1228.cur"), pointer;
+        i {
+          color: #1d2f45;
+        }
+      }
+      .details {
+        display: grid;
+
+        color: white;
+        grid-row: 2 / 3;
+        grid-template: 1fr / repeat(4, 1fr);
+        padding: 0rem;
+        line-height: 1.8;
+        font-size: 0.9rem;
+        p {
+          display: grid;
+          grid-row: 1 / 2;
+          grid-column: 2 / 4;
+        }
+      }
+      .social_network_logos {
+        display: grid;
+        color: #ecf0f1;
+        grid-row: 3 / 4;
+        font-size: 2.7rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        column-gap: 0.9em;
+        margin-bottom: 1.5rem;
+        .fa-instagram {
+          grid-column: 1 / 2;
+          cursor: url("../cursor/gam1228.cur"), pointer;
+        }
+        .fa-whatsapp {
+          grid-column: 2 / 3;
+          cursor: url("../cursor/gam1228.cur"), pointer;
+        }
+        .fa-telegram {
+          grid-column: 3 / 4;
+          cursor: url("../cursor/gam1228.cur"), pointer;
+        }
+      }
+    }
+  }
+}
